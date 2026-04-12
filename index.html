@@ -66,9 +66,8 @@
 
     <!-- HERO -->
     <section class="hero">
-      <!-- Replace images/hero.jpg with your own photo -->
       <div class="hero-media">
-        <img src="images/hero.jpg" alt="JC Landscaping — Jon Carpenter" class="hero-photo" />
+        <img src="images/gallery/Landscaping.JPG" alt="JC Landscaping — Jon Carpenter" class="hero-photo" />
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -138,51 +137,29 @@
         </div>
 
         <div class="work-grid">
-          <div class="work-item reveal">
+          <div class="work-item reveal" onclick="navigate('svc-patios')" style="cursor:pointer">
             <div class="work-photo">
-              <!-- Replace with: <img src="images/work-patio.jpg" alt="Stone patio project" /> -->
-              <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
-                <rect x="4" y="28" width="40" height="8" rx="2" stroke="rgba(107,63,31,0.45)" stroke-width="1.4"/>
-                <rect x="8" y="20" width="32" height="8" rx="2" stroke="rgba(107,63,31,0.45)" stroke-width="1.4"/>
-                <rect x="12" y="12" width="24" height="8" rx="2" stroke="rgba(107,63,31,0.45)" stroke-width="1.4"/>
-              </svg>
+              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio project" />
             </div>
-            <div class="work-label">Patio</div>
+            <div class="work-label">Patios</div>
           </div>
-          <div class="work-item reveal reveal-delay-1">
+          <div class="work-item reveal reveal-delay-1" onclick="navigate('svc-landscaping')" style="cursor:pointer">
             <div class="work-photo">
-              <!-- Replace with: <img src="images/work-landscaping.jpg" alt="Garden landscaping" /> -->
-              <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
-                <path d="M24 6C18 12 12 16 10 24c-2 6 1 14 7 16 2.5.8 5 .8 7 0 2 .8 4.5.8 7 0 6-2 9-10 7-16C36 16 30 12 24 6Z" stroke="rgba(74,103,65,0.6)" stroke-width="1.4" fill="rgba(74,103,65,0.12)"/>
-                <line x1="24" y1="40" x2="24" y2="46" stroke="rgba(74,103,65,0.5)" stroke-width="1.4"/>
-              </svg>
+              <img src="images/gallery/Landscaping3.JPG" alt="Garden landscaping" />
             </div>
             <div class="work-label">Landscaping</div>
           </div>
-          <div class="work-item reveal reveal-delay-2">
+          <div class="work-item reveal reveal-delay-2" onclick="navigate('svc-stonework')" style="cursor:pointer">
             <div class="work-photo">
-              <!-- Replace with: <img src="images/work-stonework.jpg" alt="Stonework detail" /> -->
-              <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
-                <polygon points="24,5 38,15 33,35 15,35 10,15" stroke="rgba(107,63,31,0.45)" stroke-width="1.4" fill="rgba(107,63,31,0.07)"/>
-                <line x1="24" y1="5" x2="24" y2="35" stroke="rgba(107,63,31,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
-                <line x1="10" y1="15" x2="38" y2="15" stroke="rgba(107,63,31,0.25)" stroke-width="1" stroke-dasharray="3 3"/>
-              </svg>
+              <img src="images/gallery/StonePathway1.JPG" alt="Stonework pathway" />
             </div>
             <div class="work-label">Stonework</div>
           </div>
-          <div class="work-item reveal reveal-delay-3">
+          <div class="work-item reveal reveal-delay-3" onclick="navigate('svc-pergolas')" style="cursor:pointer">
             <div class="work-photo">
-              <!-- Replace with: <img src="images/work-pergola.jpg" alt="Pergola build" /> -->
-              <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
-                <line x1="6" y1="16" x2="42" y2="16" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                <line x1="6" y1="12" x2="42" y2="12" stroke="rgba(107,63,31,0.25)" stroke-width="1"/>
-                <line x1="12" y1="16" x2="12" y2="40" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                <line x1="36" y1="16" x2="36" y2="40" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                <line x1="20" y1="16" x2="20" y2="28" stroke="rgba(107,63,31,0.3)" stroke-width="1"/>
-                <line x1="28" y1="16" x2="28" y2="28" stroke="rgba(107,63,31,0.3)" stroke-width="1"/>
-              </svg>
+              <img src="images/gallery/Pergola1.JPG" alt="Pergola build" />
             </div>
-            <div class="work-label">Pergola</div>
+            <div class="work-label">Pergolas</div>
           </div>
         </div>
 
@@ -208,7 +185,7 @@
 
         <div class="teaser-grid">
           <!-- Landscaping -->
-          <div class="teaser-card reveal" onclick="navigate('services')">
+          <div class="teaser-card reveal" onclick="navigate('svc-landscaping')">
             <div class="teaser-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 2C9 5 6 7 4 11c-1.5 3 0 7 3 8 1.5.5 3 .5 5 0 2 .5 3.5.5 5 0 3-1 4.5-5 3-8C18 7 15 5 12 2Z" stroke="#6B3F1F" stroke-width="1.4" fill="rgba(74,103,65,0.15)"/>
@@ -220,7 +197,7 @@
           </div>
 
           <!-- Hardscaping -->
-          <div class="teaser-card reveal reveal-delay-1" onclick="navigate('services')">
+          <div class="teaser-card reveal reveal-delay-1" onclick="navigate('svc-hardscaping')">
             <div class="teaser-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <rect x="3" y="14" width="18" height="4" rx="1" stroke="#6B3F1F" stroke-width="1.4"/>
@@ -233,7 +210,7 @@
           </div>
 
           <!-- Stonework -->
-          <div class="teaser-card reveal reveal-delay-2" onclick="navigate('services')">
+          <div class="teaser-card reveal reveal-delay-2" onclick="navigate('svc-stonework')">
             <div class="teaser-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <polygon points="12,3 20,9 17,19 7,19 4,9" stroke="#6B3F1F" stroke-width="1.4" fill="rgba(107,63,31,0.08)"/>
@@ -245,7 +222,7 @@
           </div>
 
           <!-- Pergolas -->
-          <div class="teaser-card reveal" onclick="navigate('services')">
+          <div class="teaser-card reveal" onclick="navigate('svc-pergolas')">
             <div class="teaser-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <line x1="3" y1="8" x2="21" y2="8" stroke="#6B3F1F" stroke-width="1.4" stroke-linecap="round"/>
@@ -262,7 +239,7 @@
           </div>
 
           <!-- Fencing -->
-          <div class="teaser-card reveal reveal-delay-1" onclick="navigate('services')">
+          <div class="teaser-card reveal reveal-delay-1" onclick="navigate('svc-fencing')">
             <div class="teaser-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <line x1="3" y1="8" x2="21" y2="8" stroke="#6B3F1F" stroke-width="1.2"/>
@@ -277,7 +254,7 @@
           </div>
 
           <!-- Lawn Mowing -->
-          <div class="teaser-card reveal reveal-delay-2" onclick="navigate('services')">
+          <div class="teaser-card reveal reveal-delay-2" onclick="navigate('svc-mowing')">
             <div class="teaser-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <ellipse cx="12" cy="17" rx="9" ry="3" stroke="#6B3F1F" stroke-width="1.4"/>
@@ -291,7 +268,7 @@
           </div>
 
           <!-- Patios -->
-          <div class="teaser-card reveal" onclick="navigate('services')">
+          <div class="teaser-card reveal" onclick="navigate('svc-patios')">
             <div class="teaser-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <rect x="3" y="16" width="18" height="4" rx="1" stroke="#6B3F1F" stroke-width="1.4"/>
@@ -483,20 +460,15 @@
 
         <!-- FEATURED: Landscaping -->
         <div class="service-featured reveal">
-          <div class="service-featured-photo">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="4" y="4" width="44" height="44" rx="6" stroke="rgba(250,245,238,0.3)" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <path d="M26 8C18 16 12 20 10 28c-2 6 1 14 7 16 3 1 6 1 9 0 3 1 6 1 9 0 6-2 9-10 7-16C40 20 34 16 26 8Z" stroke="rgba(250,245,238,0.5)" stroke-width="1.5" fill="rgba(74,103,65,0.25)"/>
-              <line x1="26" y1="44" x2="26" y2="48" stroke="rgba(250,245,238,0.4)" stroke-width="1.5"/>
-            </svg>
-            <span style="font-size:0.8rem; letter-spacing:0.05em;">[Photo: Landscaping project]</span>
+          <div class="service-featured-photo" style="padding:0; border:none; margin:0; border-radius:0; min-height:340px;">
+            <img src="images/gallery/Landscaping.JPG" alt="Landscaping project" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:0;" />
           </div>
           <div class="service-featured-text">
             <div class="service-badge">Featured Service</div>
             <h2>Landscaping</h2>
             <p>This is where Jon's heart is. Whether you're starting from scratch or refreshing an overgrown space, Jon and his team will design and plant something that feels like it belongs there — because they know plants, and they know your yard.</p>
             <p>He doesn't work from a catalog. He walks the space, he listens to what you want, and then he figures out what actually makes sense for the soil, the light, and the way you live out there. The result is a yard that looks like it was always meant to be that way.</p>
-            <button class="btn btn-outline" onclick="navigate('contact')" style="margin-top:0.5rem;">Get a Quote</button>
+            <button class="btn btn-outline" onclick="navigate('svc-landscaping')" style="margin-top:0.5rem;">Learn More</button>
           </div>
         </div>
 
@@ -504,113 +476,74 @@
         <div class="services-grid">
 
           <!-- Hardscaping -->
-          <div class="service-card reveal">
+          <div class="service-card reveal" onclick="navigate('svc-hardscaping')" style="cursor:pointer">
             <div class="service-card-photo">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <rect x="4" y="22" width="28" height="6" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <rect x="7" y="16" width="22" height="6" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <rect x="10" y="10" width="16" height="6" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-              </svg>
-              <span>[Photo: Hardscaping project]</span>
+              <img src="images/gallery/Stonewall.JPEG" alt="Stone retaining wall" />
             </div>
             <div class="service-card-body">
               <h3>Hardscaping</h3>
-              <p>From retaining walls to custom patios, the stonework here is something neighbors stop and stare at. Built to last and built to look right.</p>
-              <a class="btn-sm" onclick="navigate('contact')">Get a Quote</a>
+              <p>From retaining walls to tiered garden borders, the stonework here is something neighbors stop and stare at. Built to last and built to look right.</p>
+              <a class="btn-sm" onclick="navigate('svc-hardscaping')">Learn More</a>
             </div>
           </div>
 
           <!-- Stonework -->
-          <div class="service-card reveal reveal-delay-1">
+          <div class="service-card reveal reveal-delay-1" onclick="navigate('svc-stonework')" style="cursor:pointer">
             <div class="service-card-photo">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <polygon points="18,4 30,12 26,28 10,28 6,12" stroke="rgba(107,63,31,0.5)" stroke-width="1.2" fill="rgba(107,63,31,0.06)"/>
-                <line x1="18" y1="4" x2="18" y2="28" stroke="rgba(107,63,31,0.3)" stroke-width="0.8" stroke-dasharray="2 2"/>
-                <line x1="6" y1="12" x2="30" y2="12" stroke="rgba(107,63,31,0.3)" stroke-width="0.8" stroke-dasharray="2 2"/>
-              </svg>
-              <span>[Photo: Stonework detail]</span>
+              <img src="images/gallery/StonePathway1.JPG" alt="Stone pathway" />
             </div>
             <div class="service-card-body">
               <h3>Stonework</h3>
               <p>Meticulous. Artistic. Permanent. Jon's eye for how stone should sit and flow is something you can't fake — and something you'll notice every single day.</p>
-              <a class="btn-sm" onclick="navigate('contact')">Get a Quote</a>
+              <a class="btn-sm" onclick="navigate('svc-stonework')">Learn More</a>
             </div>
           </div>
 
           <!-- Pergolas -->
-          <div class="service-card reveal reveal-delay-2">
+          <div class="service-card reveal reveal-delay-2" onclick="navigate('svc-pergolas')" style="cursor:pointer">
             <div class="service-card-photo">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <line x1="4" y1="12" x2="32" y2="12" stroke="rgba(107,63,31,0.5)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="4" y1="9" x2="32" y2="9" stroke="rgba(107,63,31,0.3)" stroke-width="0.8"/>
-                <line x1="8" y1="12" x2="8" y2="30" stroke="rgba(107,63,31,0.5)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="28" y1="12" x2="28" y2="30" stroke="rgba(107,63,31,0.5)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="13" y1="12" x2="13" y2="22" stroke="rgba(107,63,31,0.3)" stroke-width="0.8"/>
-                <line x1="18" y1="12" x2="18" y2="22" stroke="rgba(107,63,31,0.3)" stroke-width="0.8"/>
-                <line x1="23" y1="12" x2="23" y2="22" stroke="rgba(107,63,31,0.3)" stroke-width="0.8"/>
-              </svg>
-              <span>[Photo: Pergola build]</span>
+              <img src="images/gallery/Pergola1.JPG" alt="Pergola build" />
             </div>
             <div class="service-card-body">
               <h3>Pergolas</h3>
               <p>Custom-built outdoor structures that give your space a place to breathe, gather, and settle in. Designed to fit how you actually use your yard.</p>
-              <a class="btn-sm" onclick="navigate('contact')">Get a Quote</a>
+              <a class="btn-sm" onclick="navigate('svc-pergolas')">Learn More</a>
             </div>
           </div>
 
           <!-- Fencing -->
-          <div class="service-card reveal">
+          <div class="service-card reveal" onclick="navigate('svc-fencing')" style="cursor:pointer">
             <div class="service-card-photo">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <line x1="4" y1="12" x2="32" y2="12" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <line x1="4" y1="22" x2="32" y2="22" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <rect x="7" y="8" width="4" height="20" rx="1.5" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <rect x="16" y="8" width="4" height="20" rx="1.5" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <rect x="25" y="8" width="4" height="20" rx="1.5" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-              </svg>
-              <span>[Photo: Fencing installation]</span>
+              <img src="images/gallery/Fence.jpeg" alt="Fencing installation" />
             </div>
             <div class="service-card-body">
               <h3>Fencing</h3>
               <p>Clean lines, solid build, done right the first time. Whether it's privacy, security, or just defining the space — we make it look good.</p>
-              <a class="btn-sm" onclick="navigate('contact')">Get a Quote</a>
+              <a class="btn-sm" onclick="navigate('svc-fencing')">Learn More</a>
             </div>
           </div>
 
           <!-- Lawn Mowing -->
-          <div class="service-card reveal reveal-delay-1">
+          <div class="service-card reveal reveal-delay-1" onclick="navigate('svc-mowing')" style="cursor:pointer">
             <div class="service-card-photo">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <ellipse cx="18" cy="26" rx="13" ry="4" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <path d="M7 26Q6 19 10 15" stroke="rgba(107,63,31,0.4)" stroke-width="1.2" stroke-linecap="round"/>
-                <path d="M29 26Q30 19 26 15" stroke="rgba(107,63,31,0.4)" stroke-width="1.2" stroke-linecap="round"/>
-                <path d="M12 15Q13 10 18 8Q23 10 24 15" stroke="rgba(74,103,65,0.7)" stroke-width="1.4" stroke-linecap="round" fill="rgba(74,103,65,0.12)"/>
-              </svg>
-              <span>[Photo: Freshly mowed lawn]</span>
+              <img src="images/gallery/Landscaping4.JPG" alt="Lawn care" />
             </div>
             <div class="service-card-body">
               <h3>Lawn Mowing</h3>
               <p>Where it all started. Still done with the same care as everything else — because an edge is either right or it isn't.</p>
-              <a class="btn-sm" onclick="navigate('contact')">Get a Quote</a>
+              <a class="btn-sm" onclick="navigate('svc-mowing')">Learn More</a>
             </div>
           </div>
 
           <!-- Patios -->
-          <div class="service-card reveal reveal-delay-2">
+          <div class="service-card reveal reveal-delay-2" onclick="navigate('svc-patios')" style="cursor:pointer">
             <div class="service-card-photo">
-              <!-- Replace with: <img src="images/service-patio.jpg" alt="Stone patio" /> -->
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <rect x="4" y="24" width="28" height="6" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <rect x="7" y="18" width="22" height="6" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                <rect x="10" y="12" width="16" height="6" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2" fill="rgba(107,63,31,0.06)"/>
-                <line x1="4" y1="30" x2="32" y2="30" stroke="rgba(107,63,31,0.2)" stroke-width="0.8" stroke-dasharray="2 2"/>
-              </svg>
-              <span>[Photo: Rock &amp; stone patio]</span>
+              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" />
             </div>
             <div class="service-card-body">
               <h3>Patios</h3>
-              <p>Jon builds rock and stone patios that become the heart of your outdoor space. Each stone is hand-selected and set for fit — no shortcuts, no gaps that shift over time. Whether it's a simple sitting area or a full backyard entertaining pad, the result is solid, level, and looks like it's always been there.</p>
-              <a class="btn-sm" onclick="navigate('contact')">Get a Quote</a>
+              <p>Jon builds rock and stone patios that become the heart of your outdoor space — hand-selected stone, set right, built to last.</p>
+              <a class="btn-sm" onclick="navigate('svc-patios')">Learn More</a>
             </div>
           </div>
 
@@ -757,6 +690,291 @@
 
 
   <!-- ============================================================
+       SERVICE — LANDSCAPING
+  ============================================================ -->
+  <div id="page-svc-landscaping" class="page">
+    <section class="svc-hero">
+      <div class="svc-hero-media">
+        <img src="images/gallery/Landscaping.JPG" alt="Landscaping" />
+      </div>
+      <div class="svc-hero-overlay"></div>
+      <div class="container svc-hero-content">
+        <div class="section-label reveal">Service</div>
+        <h1 class="reveal reveal-delay-1">Landscaping</h1>
+        <p class="reveal reveal-delay-2">Design and planting that fits the space — because Jon knows what belongs where.</p>
+      </div>
+    </section>
+    <section class="svc-body">
+      <div class="container">
+        <div class="svc-layout">
+          <div class="svc-text reveal">
+            <p>Jon has been reading landscapes for 35 years. Before he picks up a single plant, he walks the property — taking in the light, the soil, the drainage, the way the space flows. He notices what's already working and what the yard is trying to be. That kind of attention is what separates a landscaping job that looks planted from one that looks grown.</p>
+            <p>Every design starts with a conversation about how you actually use your outdoor space. Whether you want a low-maintenance front yard that looks sharp year-round, a backyard your kids can run through, or a full property redesign from the fence line in — Jon builds a plan around your life, not the other way around. He doesn't work from a catalog. He sources plants that belong in this climate, in your soil, in your specific conditions.</p>
+            <p>The result is a yard that looks like it was always meant to be that way. Not overdone, not generic — just right. Jon and his crew handle everything from grading and bed prep to final planting and cleanup. When they leave, there's nothing left to do but enjoy it.</p>
+            <div class="svc-actions">
+              <button class="btn btn-primary" onclick="navigate('contact')">Get a Quote</button>
+              <button class="btn btn-ghost" onclick="navigate('services')">&#8592; All Services</button>
+            </div>
+          </div>
+          <div class="svc-sidebar reveal reveal-delay-2">
+            <img src="images/gallery/Landscaping2.JPG" alt="Landscaping project" class="svc-img" />
+            <div class="svc-callout">
+              <p>"I want the yard to look like it was always supposed to look that way. Like the plants chose it themselves."</p>
+              <cite>— Jon Carpenter</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-svc-landscaping -->
+
+
+  <!-- ============================================================
+       SERVICE — HARDSCAPING
+  ============================================================ -->
+  <div id="page-svc-hardscaping" class="page">
+    <section class="svc-hero">
+      <div class="svc-hero-media">
+        <img src="images/gallery/Stonewall.JPEG" alt="Hardscaping" />
+      </div>
+      <div class="svc-hero-overlay"></div>
+      <div class="container svc-hero-content">
+        <div class="section-label reveal">Service</div>
+        <h1 class="reveal reveal-delay-1">Hardscaping</h1>
+        <p class="reveal reveal-delay-2">Built solid, built right — the structural backbone of a great yard.</p>
+      </div>
+    </section>
+    <section class="svc-body">
+      <div class="container">
+        <div class="svc-layout">
+          <div class="svc-text reveal">
+            <p>Good hardscaping is what holds a yard together. The walls, the borders, the structure — when it's done right, you don't really notice it. It just feels solid and intentional. When it's done wrong, you notice it immediately: uneven edges, walls that lean, borders that wash out after the first hard rain. Jon doesn't cut corners on the foundation work.</p>
+            <p>From tiered retaining walls to decorative garden borders, Jon approaches every hardscaping project the same way he approaches everything — by understanding the ground first. Proper grading, drainage planning, and base preparation are what make the difference between a wall that lasts 30 years and one that needs to be rebuilt in five.</p>
+            <p>Whether you're dealing with a slope that needs taming, a garden that needs definition, or a yard that needs structural bones before the planting can begin, Jon's crew can handle it. The stonework is tight, the lines are clean, and the finished product looks like it belongs.</p>
+            <div class="svc-actions">
+              <button class="btn btn-primary" onclick="navigate('contact')">Get a Quote</button>
+              <button class="btn btn-ghost" onclick="navigate('services')">&#8592; All Services</button>
+            </div>
+          </div>
+          <div class="svc-sidebar reveal reveal-delay-2">
+            <img src="images/gallery/Stonelining.JPEG" alt="Stone border and lining" class="svc-img" />
+            <div class="svc-callout">
+              <p>"The wall has to be right before anything else goes in. Get that wrong and you're redoing everything."</p>
+              <cite>— Jon Carpenter</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-svc-hardscaping -->
+
+
+  <!-- ============================================================
+       SERVICE — STONEWORK
+  ============================================================ -->
+  <div id="page-svc-stonework" class="page">
+    <section class="svc-hero">
+      <div class="svc-hero-media">
+        <img src="images/gallery/StonePathway1.JPG" alt="Stonework" />
+      </div>
+      <div class="svc-hero-overlay"></div>
+      <div class="container svc-hero-content">
+        <div class="section-label reveal">Service</div>
+        <h1 class="reveal reveal-delay-1">Stonework</h1>
+        <p class="reveal reveal-delay-2">Meticulous, artistic, and permanent — stone placed the way it wants to sit.</p>
+      </div>
+    </section>
+    <section class="svc-body">
+      <div class="container">
+        <div class="svc-layout">
+          <div class="svc-text reveal">
+            <p>Stonework is the part of this trade that Jon will tell you he loves most. There's a craft to it that goes beyond function — the way each piece sits, the way the pattern flows, the way the finished pathway or wall looks like it could have been there for a hundred years. That's not an accident. It comes from knowing stone.</p>
+            <p>Jon hand-selects material for every stonework project. He knows the difference between a stone that wants to sit flat and one that needs to be positioned on edge. He understands how stone weathers, how it handles freeze-thaw cycles, and which materials hold their character over time. That knowledge shows in the work.</p>
+            <p>Pathways, steps, garden borders, decorative placement — Jon's stonework ranges from simple to elaborate, but they share the same standard. Every joint is tight. Every surface is stable. Every line was thought about. If you want stonework that still looks right twenty years from now, this is the crew to call.</p>
+            <div class="svc-actions">
+              <button class="btn btn-primary" onclick="navigate('contact')">Get a Quote</button>
+              <button class="btn btn-ghost" onclick="navigate('services')">&#8592; All Services</button>
+            </div>
+          </div>
+          <div class="svc-sidebar reveal reveal-delay-2">
+            <img src="images/gallery/StonePathway2.JPG" alt="Stone pathway" class="svc-img" />
+            <div class="svc-callout">
+              <p>"Stone has a right way to sit. Once you learn to see it, you can't unsee it — and you can't settle for less."</p>
+              <cite>— Jon Carpenter</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-svc-stonework -->
+
+
+  <!-- ============================================================
+       SERVICE — PERGOLAS
+  ============================================================ -->
+  <div id="page-svc-pergolas" class="page">
+    <section class="svc-hero">
+      <div class="svc-hero-media">
+        <img src="images/gallery/Pergola1.JPG" alt="Pergola" />
+      </div>
+      <div class="svc-hero-overlay"></div>
+      <div class="container svc-hero-content">
+        <div class="section-label reveal">Service</div>
+        <h1 class="reveal reveal-delay-1">Pergolas</h1>
+        <p class="reveal reveal-delay-2">Custom-built outdoor structures — a place to breathe, gather, and settle in.</p>
+      </div>
+    </section>
+    <section class="svc-body">
+      <div class="container">
+        <div class="svc-layout">
+          <div class="svc-text reveal">
+            <p>A pergola is one of those additions that changes how you use your yard. It gives the space definition — suddenly there's a reason to be outside. A place to sit in the shade, have dinner, or just breathe without the sun in your face. Jon builds pergolas that feel like they belong to the property, not like something dropped in from a big-box store.</p>
+            <p>Every pergola Jon builds is custom — sized and positioned for how you actually want to use it. He works with cedar and other durable hardwoods, handling all the framing, post-setting, and finishing work himself. The result is solid enough to outlast most of what's around it, and built well enough that you won't be looking at it wondering if it's level.</p>
+            <p>Whether you're looking for a simple four-post structure over a patio, a more elaborate design with built-in seating, or something that connects to the house — Jon will figure out what makes sense for your space. Come spring, when everyone else is wishing they'd done it last year, you'll be glad you did it now.</p>
+            <div class="svc-actions">
+              <button class="btn btn-primary" onclick="navigate('contact')">Get a Quote</button>
+              <button class="btn btn-ghost" onclick="navigate('services')">&#8592; All Services</button>
+            </div>
+          </div>
+          <div class="svc-sidebar reveal reveal-delay-2">
+            <img src="images/gallery/Pergola2.JPEG" alt="Pergola over patio" class="svc-img" />
+            <div class="svc-callout">
+              <p>"A pergola should feel like it grew there. That takes planning, and it takes building it right the first time."</p>
+              <cite>— Jon Carpenter</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-svc-pergolas -->
+
+
+  <!-- ============================================================
+       SERVICE — FENCING
+  ============================================================ -->
+  <div id="page-svc-fencing" class="page">
+    <section class="svc-hero">
+      <div class="svc-hero-media">
+        <img src="images/gallery/Fence.jpeg" alt="Fencing" />
+      </div>
+      <div class="svc-hero-overlay"></div>
+      <div class="container svc-hero-content">
+        <div class="section-label reveal">Service</div>
+        <h1 class="reveal reveal-delay-1">Fencing</h1>
+        <p class="reveal reveal-delay-2">Clean lines, solid build — done right the first time, every time.</p>
+      </div>
+    </section>
+    <section class="svc-body">
+      <div class="container">
+        <div class="svc-layout">
+          <div class="svc-text reveal">
+            <p>Fencing is one of those things that's easy to do badly. Crooked posts, gaps at the bottom, rails that sag — these things stand out every single day. Jon has been building fences for 35 years and he's never gotten comfortable with sloppy work. Posts go in plumb, rails go in level, and the finished line is something you can actually be proud of looking at from either side.</p>
+            <p>Whether it's a privacy fence to block out a neighbor, a decorative border to define your property, or a functional enclosure for a dog run or garden, Jon builds it the right way. Proper post depth, proper concrete, and proper spacing — the basics that most people cut corners on and regret later. Material options include cedar, pressure-treated pine, and composite, depending on your budget and goals.</p>
+            <p>Jon also handles fence repairs and replacements. If you've got sections that are leaning, rotting out, or just looking rough, his crew can assess what needs to come out and what can be salvaged. A straight fence line makes the whole yard look better — it's one of those upgrades that's obvious the day it's done.</p>
+            <div class="svc-actions">
+              <button class="btn btn-primary" onclick="navigate('contact')">Get a Quote</button>
+              <button class="btn btn-ghost" onclick="navigate('services')">&#8592; All Services</button>
+            </div>
+          </div>
+          <div class="svc-sidebar reveal reveal-delay-2">
+            <img src="images/gallery/Fence1.jpeg" alt="Cedar fence detail" class="svc-img" />
+            <div class="svc-callout">
+              <p>"A good fence line makes the whole yard look intentional. There's no shortcut to getting it straight."</p>
+              <cite>— Jon Carpenter</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-svc-fencing -->
+
+
+  <!-- ============================================================
+       SERVICE — LAWN MOWING
+  ============================================================ -->
+  <div id="page-svc-mowing" class="page">
+    <section class="svc-hero svc-hero--no-img">
+      <div class="svc-hero-overlay svc-hero-overlay--solid"></div>
+      <div class="container svc-hero-content">
+        <div class="section-label reveal">Service</div>
+        <h1 class="reveal reveal-delay-1">Lawn Mowing</h1>
+        <p class="reveal reveal-delay-2">Where it all started — still done with the same care as everything else.</p>
+      </div>
+    </section>
+    <section class="svc-body">
+      <div class="container">
+        <div class="svc-layout">
+          <div class="svc-text reveal">
+            <p>This is where it all started for Jon — a neighbor who needed their lawn mowed, and a guy who did it right the first time. Thirty-five years later, the mowing service is still running on that same principle: show up, do it properly, and leave the yard looking better than you found it. That means sharp blades, clean edges, and consistent cuts — not just going through the motions.</p>
+            <p>Jon's crew handles regular mowing schedules for residential properties throughout the area. Every visit includes mowing, edging, and cleanup — so you're not coming home to clippings on the driveway or a blown-out edge along the sidewalk. The schedule works around your property's growth rate and the season, not just a fixed calendar.</p>
+            <p>Some customers have been on Jon's mowing schedule for 20 years. That's not because they haven't had other options — it's because when you find someone who actually takes pride in a lawn cut, you don't let them go. If you want a crew that cares about the details, even on a Tuesday afternoon in August, this is it.</p>
+            <div class="svc-actions">
+              <button class="btn btn-primary" onclick="navigate('contact')">Get a Quote</button>
+              <button class="btn btn-ghost" onclick="navigate('services')">&#8592; All Services</button>
+            </div>
+          </div>
+          <div class="svc-sidebar reveal reveal-delay-2">
+            <div class="svc-img-placeholder">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <ellipse cx="24" cy="34" rx="18" ry="5" stroke="rgba(74,103,65,0.5)" stroke-width="1.5"/>
+                <path d="M8 34Q7 25 13 19" stroke="rgba(74,103,65,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M40 34Q41 25 35 19" stroke="rgba(74,103,65,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 19Q17 11 24 9Q31 11 33 19" stroke="rgba(74,103,65,0.7)" stroke-width="1.8" stroke-linecap="round" fill="rgba(74,103,65,0.12)"/>
+              </svg>
+              <span>Photo coming soon</span>
+            </div>
+            <div class="svc-callout">
+              <p>"The lawn was the beginning. Thirty-five years in, I still want every cut to look like it matters — because it does."</p>
+              <cite>— Jon Carpenter</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-svc-mowing -->
+
+
+  <!-- ============================================================
+       SERVICE — PATIOS
+  ============================================================ -->
+  <div id="page-svc-patios" class="page">
+    <section class="svc-hero">
+      <div class="svc-hero-media">
+        <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" />
+      </div>
+      <div class="svc-hero-overlay"></div>
+      <div class="container svc-hero-content">
+        <div class="section-label reveal">Service</div>
+        <h1 class="reveal reveal-delay-1">Patios</h1>
+        <p class="reveal reveal-delay-2">Rock and stone patios built to last — and built to be the centerpiece of your yard.</p>
+      </div>
+    </section>
+    <section class="svc-body">
+      <div class="container">
+        <div class="svc-layout">
+          <div class="svc-text reveal">
+            <p>Jon builds rock and stone patios that become the centerpiece of the backyard. Not the kind that shifts and sinks after a winter — the kind that's still perfectly level a decade later because the base was done right. Every patio project starts below the surface: proper excavation, compacted gravel, and a screeded sand bed that gives the stone a foundation it can actually sit on.</p>
+            <p>Material selection matters as much as installation. Jon works with fieldstone, bluestone, flagstone, and natural irregular rock depending on the look you're after and the budget you're working with. He'll walk you through the options and help you understand what each material looks like over time — because some stones weather beautifully and some just get stained. You should know what you're getting before it goes in the ground.</p>
+            <p>The finished patio is tight, flat, and drains correctly. Jon doesn't rush the setting process — each stone gets positioned, checked, adjusted, and checked again. If something's not right, it comes back up. That standard is what makes the difference between a patio that looks great at installation and one that still looks great five years later.</p>
+            <div class="svc-actions">
+              <button class="btn btn-primary" onclick="navigate('contact')">Get a Quote</button>
+              <button class="btn btn-ghost" onclick="navigate('services')">&#8592; All Services</button>
+            </div>
+          </div>
+          <div class="svc-sidebar reveal reveal-delay-2">
+            <img src="images/gallery/StonePatio2.JPEG" alt="Stone patio detail" class="svc-img" />
+            <div class="svc-callout">
+              <p>"The base is everything. If the foundation isn't right, nothing else matters. That's where I spend my time."</p>
+              <cite>— Jon Carpenter</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- /page-svc-patios -->
+
+
+  <!-- ============================================================
        GALLERY PAGE
   ============================================================ -->
   <div id="page-gallery" class="page">
@@ -777,48 +995,16 @@
           <h2 class="gallery-cat-title">Patios</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/patio-1.jpg" alt="Fieldstone patio" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <rect x="4" y="28" width="40" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="8" y="20" width="32" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="12" y="12" width="24" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4" fill="rgba(107,63,31,0.06)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Fieldstone entertaining patio</div>
+              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" />
+              <div class="gallery-caption">Natural stone entertaining patio</div>
             </div>
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/patio-2.jpg" alt="Flagstone patio with fire pit" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <rect x="4" y="28" width="40" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="8" y="20" width="32" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="12" y="12" width="24" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4" fill="rgba(107,63,31,0.06)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Flagstone patio with fire pit surround</div>
-            </div>
-            <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/patio-3.jpg" alt="Bluestone walkway and patio" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <rect x="4" y="28" width="40" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="8" y="20" width="32" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="12" y="12" width="24" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4" fill="rgba(107,63,31,0.06)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Bluestone walkway leading to back patio</div>
+              <img src="images/gallery/StonePatio2.JPEG" alt="Stone patio 2" />
+              <div class="gallery-caption">Flagstone patio with custom edging</div>
             </div>
             <div class="gallery-item gallery-item--wide">
-              <!-- Replace with: <img src="images/gallery/patio-4.jpg" alt="Large natural stone patio" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <rect x="4" y="28" width="40" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="8" y="20" width="32" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4"/>
-                  <rect x="12" y="12" width="24" height="8" rx="2" stroke="rgba(107,63,31,0.4)" stroke-width="1.4" fill="rgba(107,63,31,0.06)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Large natural stone patio — full backyard build</div>
+              <img src="images/gallery/WoodPatio.JPEG" alt="Wood patio" />
+              <div class="gallery-caption">Full backyard patio build</div>
             </div>
           </div>
         </div>
@@ -828,31 +1014,16 @@
           <h2 class="gallery-cat-title">Landscaping</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/landscaping-1.jpg" alt="Front yard redesign" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <path d="M24 6C18 12 12 16 10 24c-2 6 1 14 7 16 2.5.8 5 .8 7 0 2 .8 4.5.8 7 0 6-2 9-10 7-16C36 16 30 12 24 6Z" stroke="rgba(74,103,65,0.5)" stroke-width="1.4" fill="rgba(74,103,65,0.1)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Front yard full redesign</div>
+              <img src="images/gallery/Landscaping2.JPG" alt="Landscaping project" />
+              <div class="gallery-caption">Front yard redesign</div>
             </div>
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/landscaping-2.jpg" alt="Garden bed planting" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <path d="M24 6C18 12 12 16 10 24c-2 6 1 14 7 16 2.5.8 5 .8 7 0 2 .8 4.5.8 7 0 6-2 9-10 7-16C36 16 30 12 24 6Z" stroke="rgba(74,103,65,0.5)" stroke-width="1.4" fill="rgba(74,103,65,0.1)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Perennial garden bed installation</div>
+              <img src="images/gallery/Landscaping3.JPG" alt="Landscaping project 2" />
+              <div class="gallery-caption">Garden bed installation</div>
             </div>
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/landscaping-3.jpg" alt="Backyard transformation" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <path d="M24 6C18 12 12 16 10 24c-2 6 1 14 7 16 2.5.8 5 .8 7 0 2 .8 4.5.8 7 0 6-2 9-10 7-16C36 16 30 12 24 6Z" stroke="rgba(74,103,65,0.5)" stroke-width="1.4" fill="rgba(74,103,65,0.1)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Backyard transformation — before &amp; after</div>
+              <img src="images/gallery/Landscaping4.JPG" alt="Landscaping project 3" />
+              <div class="gallery-caption">Full property planting</div>
             </div>
           </div>
         </div>
@@ -862,31 +1033,28 @@
           <h2 class="gallery-cat-title">Hardscaping &amp; Stonework</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/hardscape-1.jpg" alt="Retaining wall" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <polygon points="24,5 38,15 33,35 15,35 10,15" stroke="rgba(107,63,31,0.45)" stroke-width="1.4" fill="rgba(107,63,31,0.07)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Tiered stone retaining wall</div>
+              <img src="images/gallery/Stonewall.JPEG" alt="Stone retaining wall" />
+              <div class="gallery-caption">Stone retaining wall</div>
             </div>
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/hardscape-2.jpg" alt="Custom stone steps" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <polygon points="24,5 38,15 33,35 15,35 10,15" stroke="rgba(107,63,31,0.45)" stroke-width="1.4" fill="rgba(107,63,31,0.07)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Custom stone entry steps</div>
+              <img src="images/gallery/Stonelining.JPEG" alt="Stone lining" />
+              <div class="gallery-caption">Stone border and lining</div>
             </div>
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/hardscape-3.jpg" alt="Decorative stonework" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <polygon points="24,5 38,15 33,35 15,35 10,15" stroke="rgba(107,63,31,0.45)" stroke-width="1.4" fill="rgba(107,63,31,0.07)"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Decorative boulder placement</div>
+              <img src="images/gallery/StonePathway1.JPG" alt="Stone pathway" />
+              <div class="gallery-caption">Natural stone pathway</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery/StonePathway2.JPG" alt="Stone pathway 2" />
+              <div class="gallery-caption">Flagstone walkway</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery/Stonepathway3.JPEG" alt="Stone pathway 3" />
+              <div class="gallery-caption">Curved stone path through garden</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery/StonePathway4.JPEG" alt="Stone pathway 4" />
+              <div class="gallery-caption">Entry pathway — fieldstone</div>
             </div>
           </div>
         </div>
@@ -896,39 +1064,20 @@
           <h2 class="gallery-cat-title">Pergolas &amp; Fencing</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/pergola-1.jpg" alt="Cedar pergola" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <line x1="6" y1="16" x2="42" y2="16" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="12" y1="16" x2="12" y2="40" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="36" y1="16" x2="36" y2="40" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Cedar pergola with climbing vines</div>
+              <img src="images/gallery/Pergola1.JPG" alt="Pergola" />
+              <div class="gallery-caption">Cedar pergola</div>
             </div>
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/pergola-2.jpg" alt="Pergola with seating" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <line x1="6" y1="16" x2="42" y2="16" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="12" y1="16" x2="12" y2="40" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="36" y1="16" x2="36" y2="40" stroke="rgba(107,63,31,0.5)" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Freestanding pergola over patio seating area</div>
+              <img src="images/gallery/Pergola2.JPEG" alt="Pergola 2" />
+              <div class="gallery-caption">Freestanding pergola over patio</div>
             </div>
             <div class="gallery-item">
-              <!-- Replace with: <img src="images/gallery/fence-1.jpg" alt="Wood privacy fence" /> -->
-              <div class="gallery-placeholder">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
-                  <line x1="4" y1="18" x2="44" y2="18" stroke="rgba(107,63,31,0.5)" stroke-width="1.5"/>
-                  <line x1="4" y1="30" x2="44" y2="30" stroke="rgba(107,63,31,0.5)" stroke-width="1.5"/>
-                  <rect x="8" y="12" width="6" height="28" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                  <rect x="21" y="12" width="6" height="28" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                  <rect x="34" y="12" width="6" height="28" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
-                </svg>
-              </div>
-              <div class="gallery-caption">Board-on-board cedar privacy fence</div>
+              <img src="images/gallery/Fence.jpeg" alt="Fencing" />
+              <div class="gallery-caption">Privacy fence installation</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery/Fence1.jpeg" alt="Fencing detail" />
+              <div class="gallery-caption">Board-on-board cedar fence</div>
             </div>
           </div>
         </div>

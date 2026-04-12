@@ -1403,3 +1403,209 @@ ul { list-style: none; }
   .intro-photos { flex-direction: row; }
   .intro-photo-slot--secondary { border-top: none; border-left: 1px dashed rgba(107,63,31,0.2); border-radius: 0; }
 }
+
+/* ============================================================
+   SERVICE DETAIL PAGES
+============================================================ */
+.svc-hero {
+  position: relative;
+  height: 58vh;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.svc-hero--no-img {
+  background: var(--espresso);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(107,63,31,0.5) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(201,123,58,0.15) 0%, transparent 50%);
+}
+
+.svc-hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.svc-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.svc-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(27,67,50,0.95) 0%,
+    rgba(27,67,50,0.55) 50%,
+    rgba(27,67,50,0.2) 100%
+  );
+}
+
+.svc-hero-overlay--solid {
+  background: transparent;
+}
+
+.svc-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 3.5rem;
+}
+
+.svc-hero-content .section-label { color: var(--amber); }
+
+.svc-hero-content h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  color: var(--cream);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 0 rgba(27,67,50,0.5);
+}
+
+.svc-hero-content p {
+  color: rgba(250,245,238,0.8);
+  font-size: 1.05rem;
+  max-width: 560px;
+}
+
+/* Body layout */
+.svc-body {
+  padding: 5rem 0;
+  background: var(--cream);
+}
+
+.svc-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.svc-text p {
+  color: var(--espresso);
+  line-height: 1.85;
+  margin-bottom: 1.4rem;
+  font-size: 1.05rem;
+}
+
+.svc-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-ghost {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid rgba(107,63,31,0.3);
+  background: transparent;
+  color: var(--brown);
+}
+
+.btn-ghost:hover {
+  border-color: var(--brown);
+  background: rgba(107,63,31,0.06);
+  transform: translateY(-1px);
+}
+
+/* Sidebar */
+.svc-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.svc-img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 8px 35px var(--shadow);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.svc-img-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--cream-dark);
+  border: 2px dashed var(--amber);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--brown-light);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.svc-callout {
+  margin-top: 1.5rem;
+  background: var(--espresso);
+  border-radius: 8px;
+  padding: 1.75rem;
+}
+
+.svc-callout p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--cream);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.svc-callout cite {
+  font-size: 0.72rem;
+  color: var(--amber);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Service card photo images */
+.service-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .svc-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .svc-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .svc-hero {
+    height: 70vw;
+    min-height: 320px;
+  }
+  .svc-hero-content h1 {
+    font-size: 2rem;
+  }
+}
