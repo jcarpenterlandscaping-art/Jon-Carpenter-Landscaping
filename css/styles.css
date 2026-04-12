@@ -270,26 +270,22 @@ ul { list-style: none; }
   will-change: transform;
 }
 
+/* Ken Burns runs continuously on every slide — no restart, no snap */
 @keyframes kenBurns {
-  from { transform: scale(1); }
-  to   { transform: scale(1.13); }
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.14); }
 }
 
-.hero-slide--active img {
-  animation: kenBurns 8s ease-out forwards;
+.hero-slide img {
+  animation: kenBurns 14s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
-/* Hold final zoomed scale during fade-out so image doesn't snap back */
-.hero-slide--exit img {
-  transform: scale(1.13);
-  animation: none;
-}
-
-.hero-slide:nth-child(1) img { transform-origin: 60% 50%; }
-.hero-slide:nth-child(2) img { transform-origin: 40% 60%; }
-.hero-slide:nth-child(3) img { transform-origin: 50% 28%; }
-.hero-slide:nth-child(4) img { transform-origin: 30% 50%; }
-.hero-slide:nth-child(5) img { transform-origin: 72% 55%; }
+.hero-slide:nth-child(1) img { transform-origin: 62% 50%; animation-delay:   0s; }
+.hero-slide:nth-child(2) img { transform-origin: 38% 62%; animation-delay:  -3s; }
+.hero-slide:nth-child(3) img { transform-origin: 50% 28%; animation-delay:  -6s; }
+.hero-slide:nth-child(4) img { transform-origin: 30% 52%; animation-delay:  -9s; }
+.hero-slide:nth-child(5) img { transform-origin: 70% 56%; animation-delay: -12s; }
 
 /* ---- Overlay — clean, no glare ---- */
 .hero-overlay {

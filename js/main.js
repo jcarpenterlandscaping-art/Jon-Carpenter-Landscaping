@@ -64,60 +64,33 @@ function handleFormSubmit(e) {
 }
 
 /* ---- Hero Slideshow with Ken Burns ---- */
-(function initHeroSlideshow() {
-  const slides   = Array.from(document.querySelectorAll('.hero-slide'));
-  const dots     = Array.from(document.querySelectorAll('.hero-dot'));
+function initHeroSlideshow() {
+  const slides = Array.from(document.querySelectorAll('.hero-slide'));
+  const dots   = Array.from(document.querySelectorAll('.hero-dot'));
   if (!slides.length) return;
 
-  let current  = 0;
-  let timer    = null;
-  const DURATION = 5800; // ms per slide
+  let current = 0;
+  const DURATION = 5800;
 
   function goTo(index) {
-    // Hold the zoomed scale on the exiting slide so it doesn't snap back
-    const exitSlide = slides[current];
-    exitSlide.classList.add('hero-slide--exit');
-    exitSlide.classList.remove('hero-slide--active');
-    setTimeout(() => exitSlide.classList.remove('hero-slide--exit'), 1600);
-
+    slides[current].classList.remove('hero-slide--active');
     if (dots[current]) dots[current].classList.remove('hero-dot--active');
-
     current = (index + slides.length) % slides.length;
-
-    // Restart Ken Burns by forcing a reflow
-    const img = slides[current].querySelector('img');
-    img.style.animation = 'none';
-    void img.offsetWidth;
-    img.style.animation = '';
-
     slides[current].classList.add('hero-slide--active');
     if (dots[current]) dots[current].classList.add('hero-dot--active');
   }
 
-  function next() { goTo(current + 1); }
-
-  function startTimer() {
-    clearInterval(timer);
-    timer = setInterval(next, DURATION);
-  }
-
   dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => { goTo(i); startTimer(); });
+    dot.addEventListener('click', () => { goTo(i); });
   });
 
-  // Pause on hover, resume on leave
-  const hero = document.querySelector('.hero');
-  if (hero) {
-    hero.addEventListener('mouseenter', () => clearInterval(timer));
-    hero.addEventListener('mouseleave', startTimer);
-  }
-
-  startTimer();
-})();
+  setInterval(() => goTo(current + 1), DURATION);
+}
 
 /* ---- Init on load ---- */
 window.addEventListener('DOMContentLoaded', () => {
   initReveal();
+  initHeroSlideshow();
 
   // Reveal above-fold hero items immediately
   setTimeout(() => {
