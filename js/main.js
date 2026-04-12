@@ -74,7 +74,12 @@ function handleFormSubmit(e) {
   const DURATION = 5800; // ms per slide
 
   function goTo(index) {
-    slides[current].classList.remove('hero-slide--active');
+    // Hold the zoomed scale on the exiting slide so it doesn't snap back
+    const exitSlide = slides[current];
+    exitSlide.classList.add('hero-slide--exit');
+    exitSlide.classList.remove('hero-slide--active');
+    setTimeout(() => exitSlide.classList.remove('hero-slide--exit'), 1600);
+
     if (dots[current]) dots[current].classList.remove('hero-dot--active');
 
     current = (index + slides.length) % slides.length;

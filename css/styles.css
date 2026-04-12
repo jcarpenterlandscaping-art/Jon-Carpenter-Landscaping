@@ -279,6 +279,12 @@ ul { list-style: none; }
   animation: kenBurns 8s ease-out forwards;
 }
 
+/* Hold final zoomed scale during fade-out so image doesn't snap back */
+.hero-slide--exit img {
+  transform: scale(1.13);
+  animation: none;
+}
+
 .hero-slide:nth-child(1) img { transform-origin: 60% 50%; }
 .hero-slide:nth-child(2) img { transform-origin: 40% 60%; }
 .hero-slide:nth-child(3) img { transform-origin: 50% 28%; }
