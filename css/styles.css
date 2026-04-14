@@ -953,8 +953,7 @@ ul { list-style: none; }
    ██ SERVICES PAGE
 ============================================================ */
 .services-hero {
-  background: var(--green-soft);
-  background-image: radial-gradient(ellipse at 30% 50%, rgba(107,63,31,0.3) 0%, transparent 60%);
+  background: var(--espresso);
   padding: 5rem 0 4rem;
   text-align: center;
   position: relative;
