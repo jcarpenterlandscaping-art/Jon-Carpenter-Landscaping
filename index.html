@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JC Landscaping — Quality Outdoor Work Since 1989</title>
 
+  <!-- SEO -->
+  <meta name="description" content="JC Landscaping has served the area since 1989. Professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn care. Licensed &amp; insured. Free estimates." />
+  <link rel="canonical" href="https://jclandscaping.com/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JC Landscaping — Quality Outdoor Work Since 1989" />
+  <meta property="og:description" content="35+ years of professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn care. Licensed &amp; insured. Free estimates." />
+  <meta property="og:image" content="images/gallery/StonePatio.JPEG" />
+  <meta property="og:url" content="https://jclandscaping.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'><circle cx='19' cy='19' r='19' fill='%231B4332'/><rect x='17.5' y='24' width='3' height='8' rx='1.5' fill='%23C97B3A'/><ellipse cx='19' cy='14' rx='10' ry='9' fill='%234A6741'/><circle cx='13' cy='11' r='2' fill='%23D4845A' opacity='.8'/><circle cx='25' cy='10' r='1.5' fill='%23D4845A' opacity='.7'/><circle cx='19' cy='7' r='2' fill='%23C97B3A' opacity='.8'/></svg>" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +27,33 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured Data: Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LandscapingOrLawnService",
+    "name": "JC Landscaping",
+    "description": "Professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn care. Serving the area since 1989.",
+    "foundingDate": "1989",
+    "telephone": "TODO: Replace with real phone number",
+    "email": "jon@jclandscaping.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "TODO: Replace with city",
+      "addressRegion": "TODO: Replace with state abbreviation",
+      "addressCountry": "US"
+    },
+    "areaServed": "TODO: Replace with service area description",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    },
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 <body>
 
@@ -157,22 +199,10 @@
         <div class="intro-card reveal">
           <div class="intro-photos">
             <div class="intro-photo-slot">
-              <!-- Replace with: <img src="images/jon-field.jpg" alt="Jon in the field" /> -->
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="8" width="32" height="32" rx="4" stroke="#8B5A32" stroke-width="1.5" stroke-dasharray="4 3"/>
-                <circle cx="24" cy="22" r="6" stroke="#8B5A32" stroke-width="1.2"/>
-                <path d="M12 40c0-7 5-11 12-11s12 4 12 11" stroke="#8B5A32" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              <span>[Photo: Completed project]</span>
+              <img src="images/gallery/Landscaping.JPG" alt="JC Landscaping — completed garden project" loading="lazy" />
             </div>
             <div class="intro-photo-slot intro-photo-slot--secondary">
-              <!-- Replace with: <img src="images/crew-work.jpg" alt="The crew at work" /> -->
-              <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="8" width="32" height="32" rx="4" stroke="#8B5A32" stroke-width="1.5" stroke-dasharray="4 3"/>
-                <path d="M10 38l9-9 5 5 7-9 7 13" stroke="#8B5A32" stroke-width="1.2" stroke-linejoin="round"/>
-                <path d="M14 16 Q24 10 34 16" stroke="#8B5A32" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              <span>[Photo: The crew at work]</span>
+              <img src="images/gallery/StonePatio.JPEG" alt="Custom stone patio by JC Landscaping" loading="lazy" />
             </div>
           </div>
           <div class="intro-text">
@@ -203,25 +233,25 @@
         <div class="work-grid">
           <div class="work-item reveal" onclick="navigate('svc-patios')" style="cursor:pointer">
             <div class="work-photo">
-              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio project" />
+              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio project" loading="lazy" />
             </div>
             <div class="work-label">Patios</div>
           </div>
           <div class="work-item reveal reveal-delay-1" onclick="navigate('svc-landscaping')" style="cursor:pointer">
             <div class="work-photo">
-              <img src="images/gallery/Landscaping3.JPG" alt="Garden landscaping" />
+              <img src="images/gallery/Landscaping3.JPG" alt="Garden landscaping" loading="lazy" />
             </div>
             <div class="work-label">Landscaping</div>
           </div>
           <div class="work-item reveal reveal-delay-2" onclick="navigate('svc-stonework')" style="cursor:pointer">
             <div class="work-photo">
-              <img src="images/gallery/StonePathway1.JPG" alt="Stonework pathway" />
+              <img src="images/gallery/StonePathway1.JPG" alt="Stonework pathway" loading="lazy" />
             </div>
             <div class="work-label">Stonework</div>
           </div>
           <div class="work-item reveal reveal-delay-3" onclick="navigate('svc-pergolas')" style="cursor:pointer">
             <div class="work-photo">
-              <img src="images/gallery/Pergola1.JPG" alt="Pergola build" />
+              <img src="images/gallery/Pergola1.JPG" alt="Pergola build" loading="lazy" />
             </div>
             <div class="work-label">Pergolas</div>
           </div>
@@ -359,6 +389,45 @@
       </div>
     </section>
 
+    <!-- TESTIMONIALS -->
+    <!-- TODO: Replace placeholder names/towns with real customer testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-label text-center reveal">What Customers Say</div>
+        <h2 class="reveal reveal-delay-1">35 years of happy yards — in their own words.</h2>
+        <div class="botanical-divider reveal reveal-delay-2">
+          <div class="line"></div>
+          <svg width="32" height="20" viewBox="0 0 32 20" fill="none">
+            <path d="M16 10 Q12 4 6 6 Q10 8 12 12 Q14 16 16 14 Q18 16 20 12 Q22 8 26 6 Q20 4 16 10Z" fill="#C97B3A"/>
+            <line x1="16" y1="10" x2="16" y2="19" stroke="#C97B3A" stroke-width="1"/>
+          </svg>
+          <div class="line"></div>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"They transformed our entire backyard. The stone patio came out exactly the way we hoped — they listened, they didn't rush, and two years later it still looks brand new."</blockquote>
+            <cite>— M.T., [Town]</cite>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"We've had JC doing our lawn for almost fifteen years. Same crew, same quality every single time. You don't find that kind of consistency anymore."</blockquote>
+            <cite>— R.H., [Town]</cite>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"The pergola they built is the centerpiece of our yard now. Custom work, done right, on budget. Got their number from a neighbor and I pass it along to everyone I know."</blockquote>
+            <cite>— S.B., [Town]</cite>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- TRUST SECTION -->
     <section class="trust-section">
       <div class="container">
@@ -380,7 +449,7 @@
             <p>Not because of advertising. Because of repeat customers and honest referrals.</p>
           </div>
           <div class="trust-badge reveal reveal-delay-1">
-            <div class="number">6</div>
+            <div class="number">7</div>
             <h3>Services Offered</h3>
             <p>From a simple mow to a full backyard transformation — all done with the same care.</p>
           </div>
@@ -416,22 +485,10 @@
           <!-- Photo column -->
           <div class="about-photo-col reveal">
             <div class="about-photo-slot">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="8" width="32" height="32" rx="4" stroke="#8B5A32" stroke-width="1.5" stroke-dasharray="4 3"/>
-                <circle cx="24" cy="22" r="6" stroke="#8B5A32" stroke-width="1.2"/>
-                <path d="M12 40c0-7 5-11 12-11s12 4 12 11" stroke="#8B5A32" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              <span>[Photo: The crew]</span>
+              <img src="images/gallery/Pergola1.JPG" alt="JC Landscaping — cedar pergola build" loading="lazy" />
             </div>
             <div class="about-team-photo">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <rect x="4" y="4" width="28" height="28" rx="3" stroke="rgba(107,63,31,0.5)" stroke-width="1.2" stroke-dasharray="3 2"/>
-                <circle cx="12" cy="15" r="4" stroke="rgba(107,63,31,0.5)" stroke-width="1.1"/>
-                <circle cx="24" cy="15" r="4" stroke="rgba(107,63,31,0.5)" stroke-width="1.1"/>
-                <path d="M4 30c0-5 3.5-8 8-8s8 3 8 8" stroke="rgba(107,63,31,0.5)" stroke-width="1.1" stroke-linecap="round"/>
-                <path d="M16 30c0-5 3.5-8 8-8s8 3 8 8" stroke="rgba(107,63,31,0.5)" stroke-width="1.1" stroke-linecap="round"/>
-              </svg>
-              <span>[Photo: Recent project]</span>
+              <img src="images/gallery/StonePathway1.JPG" alt="JC Landscaping — stonework detail" loading="lazy" />
             </div>
           </div>
 
@@ -525,7 +582,7 @@
         <!-- FEATURED: Landscaping -->
         <div class="service-featured reveal">
           <div class="service-featured-photo" style="padding:0; border:none; margin:0; border-radius:0; min-height:340px;">
-            <img src="images/gallery/Landscaping.JPG" alt="Landscaping project" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:0;" />
+            <img src="images/gallery/Landscaping.JPG" alt="Landscaping project" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:0;" />
           </div>
           <div class="service-featured-text">
             <div class="service-badge">Featured Service</div>
@@ -542,7 +599,7 @@
           <!-- Hardscaping -->
           <div class="service-card reveal" onclick="navigate('svc-hardscaping')" style="cursor:pointer">
             <div class="service-card-photo">
-              <img src="images/gallery/Stonewall.JPEG" alt="Stone retaining wall" />
+              <img src="images/gallery/Stonewall.JPEG" alt="Stone retaining wall" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3>Hardscaping</h3>
@@ -554,7 +611,7 @@
           <!-- Stonework -->
           <div class="service-card reveal reveal-delay-1" onclick="navigate('svc-stonework')" style="cursor:pointer">
             <div class="service-card-photo">
-              <img src="images/gallery/StonePathway1.JPG" alt="Stone pathway" />
+              <img src="images/gallery/StonePathway1.JPG" alt="Stone pathway" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3>Stonework</h3>
@@ -578,7 +635,7 @@
           <!-- Fencing -->
           <div class="service-card reveal" onclick="navigate('svc-fencing')" style="cursor:pointer">
             <div class="service-card-photo">
-              <img src="images/gallery/Fence.jpeg" alt="Fencing installation" />
+              <img src="images/gallery/Fence.jpeg" alt="Fencing installation" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3>Fencing</h3>
@@ -590,7 +647,7 @@
           <!-- Lawn Mowing -->
           <div class="service-card reveal reveal-delay-1" onclick="navigate('svc-mowing')" style="cursor:pointer">
             <div class="service-card-photo">
-              <img src="images/gallery/Landscaping4.JPG" alt="Lawn care" />
+              <img src="images/gallery/Landscaping4.JPG" alt="Lawn care" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3>Lawn Mowing</h3>
@@ -602,7 +659,7 @@
           <!-- Patios -->
           <div class="service-card reveal reveal-delay-2" onclick="navigate('svc-patios')" style="cursor:pointer">
             <div class="service-card-photo">
-              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" />
+              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3>Patios</h3>
@@ -640,44 +697,50 @@
             <h2>Send Us a Message</h2>
             <p>Fill out the form and someone from the crew will be back in touch — usually within a day or two.</p>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contact-name">Your Name</label>
-                <input type="text" id="contact-name" placeholder="Jane Smith" />
+            <!-- TODO: Sign up at formspree.io and replace REPLACE_WITH_YOUR_FORM_ID below -->
+            <form id="contact-form" onsubmit="handleFormSubmit(event)">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Jane Smith" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="(555) 000-0000" />
+                </div>
               </div>
+
               <div class="form-group">
-                <label for="contact-phone">Phone Number</label>
-                <input type="tel" id="contact-phone" placeholder="(555) 000-0000" />
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" placeholder="jane@example.com" required />
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="contact-email">Email Address</label>
-              <input type="email" id="contact-email" placeholder="jane@example.com" />
-            </div>
+              <div class="form-group">
+                <label for="contact-service">What service are you interested in?</label>
+                <select id="contact-service" name="service">
+                  <option value="">— Select a service —</option>
+                  <option>Landscaping</option>
+                  <option>Hardscaping</option>
+                  <option>Stonework</option>
+                  <option>Pergolas</option>
+                  <option>Fencing</option>
+                  <option>Lawn Mowing</option>
+                  <option>Patios</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
 
-            <div class="form-group">
-              <label for="contact-service">What service are you interested in?</label>
-              <select id="contact-service">
-                <option value="">— Select a service —</option>
-                <option>Landscaping</option>
-                <option>Hardscaping</option>
-                <option>Stonework</option>
-                <option>Pergolas</option>
-                <option>Fencing</option>
-                <option>Lawn Mowing</option>
-                <option>Not sure yet</option>
-              </select>
-            </div>
+              <div class="form-group">
+                <label for="contact-message">What can we help you with?</label>
+                <textarea id="contact-message" name="message" placeholder="Tell us a little about your yard, what you're hoping to do, or just where to start. No detail is too small."></textarea>
+              </div>
 
-            <div class="form-group">
-              <label for="contact-message">What can we help you with?</label>
-              <textarea id="contact-message" placeholder="Tell us a little about your yard, what you're hoping to do, or just where to start. No detail is too small."></textarea>
-            </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
 
-            <div class="form-submit">
-              <button class="btn btn-primary" onclick="handleFormSubmit(event)">Send Message</button>
-            </div>
+            </form>
 
             <div id="form-success" style="display:none; margin-top:1.25rem; background:rgba(74,103,65,0.12); border:1px solid rgba(74,103,65,0.35); border-radius:6px; padding:1rem 1.25rem;">
               <p style="color:var(--green-soft); font-weight:700; margin-bottom:0.3rem;">Message received. Thanks for reaching out.</p>
@@ -759,7 +822,7 @@
   <div id="page-svc-landscaping" class="page">
     <section class="svc-hero">
       <div class="svc-hero-media">
-        <img src="images/gallery/Landscaping.JPG" alt="Landscaping" />
+        <img src="images/gallery/Landscaping.JPG" alt="Landscaping" loading="lazy" />
       </div>
       <div class="svc-hero-overlay"></div>
       <div class="container svc-hero-content">
@@ -781,7 +844,7 @@
             </div>
           </div>
           <div class="svc-sidebar reveal reveal-delay-2">
-            <img src="images/gallery/Landscaping2.JPG" alt="Landscaping project" class="svc-img" />
+            <img src="images/gallery/Landscaping2.JPG" alt="Landscaping project" class="svc-img" loading="lazy" />
             <div class="svc-callout">
               <p>"The yard should look like it was always supposed to look that way. Like the plants chose it themselves."</p>
               <cite>— JC Landscaping</cite>
@@ -799,7 +862,7 @@
   <div id="page-svc-hardscaping" class="page">
     <section class="svc-hero">
       <div class="svc-hero-media">
-        <img src="images/gallery/Stonewall.JPEG" alt="Hardscaping" />
+        <img src="images/gallery/Stonewall.JPEG" alt="Hardscaping" loading="lazy" />
       </div>
       <div class="svc-hero-overlay"></div>
       <div class="container svc-hero-content">
@@ -821,7 +884,7 @@
             </div>
           </div>
           <div class="svc-sidebar reveal reveal-delay-2">
-            <img src="images/gallery/Stonelining.JPEG" alt="Stone border and lining" class="svc-img" />
+            <img src="images/gallery/Stonelining.JPEG" alt="Stone border and lining" class="svc-img" loading="lazy" />
             <div class="svc-callout">
               <p>"The wall has to be right before anything else goes in. Get that wrong and you're redoing everything."</p>
               <cite>— JC Landscaping</cite>
@@ -839,7 +902,7 @@
   <div id="page-svc-stonework" class="page">
     <section class="svc-hero">
       <div class="svc-hero-media">
-        <img src="images/gallery/StonePathway1.JPG" alt="Stonework" />
+        <img src="images/gallery/StonePathway1.JPG" alt="Stonework" loading="lazy" />
       </div>
       <div class="svc-hero-overlay"></div>
       <div class="container svc-hero-content">
@@ -861,7 +924,7 @@
             </div>
           </div>
           <div class="svc-sidebar reveal reveal-delay-2">
-            <img src="images/gallery/StonePathway2.JPG" alt="Stone pathway" class="svc-img" />
+            <img src="images/gallery/StonePathway2.JPG" alt="Stone pathway" class="svc-img" loading="lazy" />
             <div class="svc-callout">
               <p>"Stone has a right way to sit. Once you learn to see it, you can't unsee it — and you can't settle for less."</p>
               <cite>— JC Landscaping</cite>
@@ -879,7 +942,7 @@
   <div id="page-svc-pergolas" class="page">
     <section class="svc-hero">
       <div class="svc-hero-media">
-        <img src="images/gallery/Pergola1.JPG" alt="Pergola" />
+        <img src="images/gallery/Pergola1.JPG" alt="Pergola" loading="lazy" />
       </div>
       <div class="svc-hero-overlay"></div>
       <div class="container svc-hero-content">
@@ -901,7 +964,7 @@
             </div>
           </div>
           <div class="svc-sidebar reveal reveal-delay-2">
-            <img src="images/gallery/Pergola2.JPEG" alt="Pergola over patio" class="svc-img" />
+            <img src="images/gallery/Pergola2.JPEG" alt="Pergola over patio" class="svc-img" loading="lazy" />
             <div class="svc-callout">
               <p>"A pergola should feel like it grew there. That takes planning, and it takes building it right the first time."</p>
               <cite>— JC Landscaping</cite>
@@ -919,7 +982,7 @@
   <div id="page-svc-fencing" class="page">
     <section class="svc-hero">
       <div class="svc-hero-media">
-        <img src="images/gallery/Fence.jpeg" alt="Fencing" />
+        <img src="images/gallery/Fence.jpeg" alt="Fencing" loading="lazy" />
       </div>
       <div class="svc-hero-overlay"></div>
       <div class="container svc-hero-content">
@@ -941,7 +1004,7 @@
             </div>
           </div>
           <div class="svc-sidebar reveal reveal-delay-2">
-            <img src="images/gallery/Fence1.jpeg" alt="Cedar fence detail" class="svc-img" />
+            <img src="images/gallery/Fence1.jpeg" alt="Cedar fence detail" class="svc-img" loading="lazy" />
             <div class="svc-callout">
               <p>"A good fence line makes the whole yard look intentional. There's no shortcut to getting it straight."</p>
               <cite>— JC Landscaping</cite>
@@ -1004,7 +1067,7 @@
   <div id="page-svc-patios" class="page">
     <section class="svc-hero">
       <div class="svc-hero-media">
-        <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" />
+        <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" loading="lazy" />
       </div>
       <div class="svc-hero-overlay"></div>
       <div class="container svc-hero-content">
@@ -1026,7 +1089,7 @@
             </div>
           </div>
           <div class="svc-sidebar reveal reveal-delay-2">
-            <img src="images/gallery/StonePatio2.JPEG" alt="Stone patio detail" class="svc-img" />
+            <img src="images/gallery/StonePatio2.JPEG" alt="Stone patio detail" class="svc-img" loading="lazy" />
             <div class="svc-callout">
               <p>"The base is everything. If the foundation isn't right, nothing else matters. That's where we spend our time."</p>
               <cite>— JC Landscaping</cite>
@@ -1059,15 +1122,15 @@
           <h2 class="gallery-cat-title">Patios</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" />
+              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" loading="lazy" />
               <div class="gallery-caption">Natural stone entertaining patio</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/StonePatio2.JPEG" alt="Stone patio 2" />
+              <img src="images/gallery/StonePatio2.JPEG" alt="Stone patio 2" loading="lazy" />
               <div class="gallery-caption">Flagstone patio with custom edging</div>
             </div>
             <div class="gallery-item gallery-item--wide">
-              <img src="images/gallery/WoodPatio.JPEG" alt="Wood patio" />
+              <img src="images/gallery/WoodPatio.JPEG" alt="Wood patio" loading="lazy" />
               <div class="gallery-caption">Full backyard patio build</div>
             </div>
           </div>
@@ -1078,15 +1141,15 @@
           <h2 class="gallery-cat-title">Landscaping</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="images/gallery/Landscaping2.JPG" alt="Landscaping project" />
+              <img src="images/gallery/Landscaping2.JPG" alt="Landscaping project" loading="lazy" />
               <div class="gallery-caption">Front yard redesign</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/Landscaping3.JPG" alt="Landscaping project 2" />
+              <img src="images/gallery/Landscaping3.JPG" alt="Landscaping project 2" loading="lazy" />
               <div class="gallery-caption">Garden bed installation</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/Landscaping4.JPG" alt="Landscaping project 3" />
+              <img src="images/gallery/Landscaping4.JPG" alt="Landscaping project 3" loading="lazy" />
               <div class="gallery-caption">Full property planting</div>
             </div>
           </div>
@@ -1097,27 +1160,27 @@
           <h2 class="gallery-cat-title">Hardscaping &amp; Stonework</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="images/gallery/Stonewall.JPEG" alt="Stone retaining wall" />
+              <img src="images/gallery/Stonewall.JPEG" alt="Stone retaining wall" loading="lazy" />
               <div class="gallery-caption">Stone retaining wall</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/Stonelining.JPEG" alt="Stone lining" />
+              <img src="images/gallery/Stonelining.JPEG" alt="Stone lining" loading="lazy" />
               <div class="gallery-caption">Stone border and lining</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/StonePathway1.JPG" alt="Stone pathway" />
+              <img src="images/gallery/StonePathway1.JPG" alt="Stone pathway" loading="lazy" />
               <div class="gallery-caption">Natural stone pathway</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/StonePathway2.JPG" alt="Stone pathway 2" />
+              <img src="images/gallery/StonePathway2.JPG" alt="Stone pathway 2" loading="lazy" />
               <div class="gallery-caption">Flagstone walkway</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/Stonepathway3.JPEG" alt="Stone pathway 3" />
+              <img src="images/gallery/Stonepathway3.JPEG" alt="Stone pathway 3" loading="lazy" />
               <div class="gallery-caption">Curved stone path through garden</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/StonePathway4.JPEG" alt="Stone pathway 4" />
+              <img src="images/gallery/StonePathway4.JPEG" alt="Stone pathway 4" loading="lazy" />
               <div class="gallery-caption">Entry pathway — fieldstone</div>
             </div>
           </div>
@@ -1128,19 +1191,19 @@
           <h2 class="gallery-cat-title">Pergolas &amp; Fencing</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="images/gallery/Pergola1.JPG" alt="Pergola" />
+              <img src="images/gallery/Pergola1.JPG" alt="Pergola" loading="lazy" />
               <div class="gallery-caption">Cedar pergola</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/Pergola2.JPEG" alt="Pergola 2" />
+              <img src="images/gallery/Pergola2.JPEG" alt="Pergola 2" loading="lazy" />
               <div class="gallery-caption">Freestanding pergola over patio</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/Fence.jpeg" alt="Fencing" />
+              <img src="images/gallery/Fence.jpeg" alt="Fencing" loading="lazy" />
               <div class="gallery-caption">Privacy fence installation</div>
             </div>
             <div class="gallery-item">
-              <img src="images/gallery/Fence1.jpeg" alt="Fencing detail" />
+              <img src="images/gallery/Fence1.jpeg" alt="Fencing detail" loading="lazy" />
               <div class="gallery-caption">Board-on-board cedar fence</div>
             </div>
           </div>
@@ -1201,19 +1264,20 @@
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a onclick="navigate('services')">Landscaping</a></li>
-            <li><a onclick="navigate('services')">Hardscaping</a></li>
-            <li><a onclick="navigate('services')">Stonework</a></li>
-            <li><a onclick="navigate('services')">Pergolas</a></li>
-            <li><a onclick="navigate('services')">Fencing</a></li>
-            <li><a onclick="navigate('services')">Lawn Mowing</a></li>
+            <li><a onclick="navigate('svc-landscaping')">Landscaping</a></li>
+            <li><a onclick="navigate('svc-hardscaping')">Hardscaping</a></li>
+            <li><a onclick="navigate('svc-stonework')">Stonework</a></li>
+            <li><a onclick="navigate('svc-pergolas')">Pergolas</a></li>
+            <li><a onclick="navigate('svc-fencing')">Fencing</a></li>
+            <li><a onclick="navigate('svc-mowing')">Lawn Mowing</a></li>
+            <li><a onclick="navigate('svc-patios')">Patios</a></li>
           </ul>
         </div>
 
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2024 JC Landscaping. All rights reserved.</p>
+        <p>&copy; 2025 JC Landscaping. All rights reserved.</p>
         <svg class="footer-leaf" width="28" height="28" viewBox="0 0 28 28" fill="none">
           <path d="M14 3C9 9 5 12 4 17c-1 4 1.5 9 5 10 1.5.5 3 .4 5 0 2 .4 3.5.5 5 0 3.5-1 6-6 5-10C23 12 19 9 14 3Z" fill="#C97B3A"/>
           <line x1="14" y1="27" x2="14" y2="17" stroke="#C97B3A" stroke-width="1.2"/>
@@ -1221,6 +1285,24 @@
       </div>
     </div>
   </footer>
+
+  <!-- ============================================================
+       LIGHTBOX
+  ============================================================ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-bg" id="lightbox-bg"></div>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close viewer">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <path d="M3 3l12 12M15 3L3 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
