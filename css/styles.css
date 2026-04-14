@@ -530,46 +530,54 @@ ul { list-style: none; }
 .services-teaser .botanical-divider { max-width: 400px; margin: 0 auto 3rem; }
 
 .teaser-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.25rem;
 }
 
 .teaser-card {
-  background: var(--cream);
-  border-radius: 6px;
-  padding: 1.75rem 1.5rem;
+  background: white;
+  border-radius: 8px;
   border: 1px solid rgba(107,63,31,0.12);
+  overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-align: center;
+  flex: 0 0 calc((100% - 3 * 1.25rem) / 4);
+  min-width: 0;
 }
 .teaser-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px var(--shadow);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px var(--shadow);
   border-color: var(--amber);
 }
-.teaser-icon {
-  width: 52px;
-  height: 52px;
-  background: var(--cream-dark);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1rem;
-  border: 2px solid rgba(201,123,58,0.3);
-  transition: border-color 0.3s;
+
+.teaser-photo {
+  height: 165px;
+  overflow: hidden;
 }
-.teaser-card:hover .teaser-icon { border-color: var(--amber); }
+.teaser-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+.teaser-card:hover .teaser-photo img {
+  transform: scale(1.07);
+}
+
+.teaser-body {
+  padding: 1.1rem 1.2rem 1.4rem;
+}
 .teaser-card h3 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--brown);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 .teaser-card p {
-  font-size: 0.85rem;
-  color: rgba(44,26,14,0.7);
+  font-size: 0.82rem;
+  color: rgba(44,26,14,0.68);
   line-height: 1.5;
 }
 
@@ -1329,7 +1337,7 @@ ul { list-style: none; }
    RESPONSIVE
 ============================================================ */
 @media (max-width: 900px) {
-  .teaser-grid { grid-template-columns: repeat(2, 1fr); }
+  .teaser-card { flex: 0 0 calc((100% - 1.25rem) / 2); }
   .trust-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .intro-card { grid-template-columns: 1fr; }
@@ -1364,7 +1372,7 @@ ul { list-style: none; }
   .nav-toggle { display: block; }
   #site-header { position: relative; }
   #site-header .header-inner { position: relative; }
-  .teaser-grid { grid-template-columns: 1fr; }
+  .teaser-card { flex: 0 0 100%; }
   .trust-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
