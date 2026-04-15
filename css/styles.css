@@ -172,7 +172,6 @@ ul { list-style: none; }
 .logo-img {
   height: 144px;
   width: auto;
-  border-radius: 6px;
   transition: height 0.3s ease;
 }
 .logo-tagline {
@@ -1278,7 +1277,6 @@ ul { list-style: none; }
 .footer-logo-img {
   height: 216px;
   width: auto;
-  border-radius: 8px;
   display: block;
   margin-bottom: 0.75rem;
 }
