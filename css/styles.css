@@ -795,7 +795,7 @@ ul { list-style: none; }
 ============================================================ */
 .about-hero {
   background: var(--espresso);
-  padding: 5rem 0 4rem;
+  padding: 6rem 0 7rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -954,7 +954,7 @@ ul { list-style: none; }
 ============================================================ */
 .services-hero {
   background: var(--espresso);
-  padding: 5rem 0 4rem;
+  padding: 6rem 0 7rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1104,7 +1104,7 @@ ul { list-style: none; }
 ============================================================ */
 .contact-hero {
   background: var(--espresso);
-  padding: 5rem 0 4rem;
+  padding: 6rem 0 7rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1493,7 +1493,7 @@ ul { list-style: none; }
 ============================================================ */
 .gallery-hero {
   background: var(--espresso);
-  padding: 5rem 0 4rem;
+  padding: 6rem 0 7rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1879,6 +1879,15 @@ ul { list-style: none; }
 /* ============================================================
    TYPOGRAPHY — improved scale + tighter letter-spacing
 ============================================================ */
+
+/* Interior page hero — widen container so titles have room before wrapping */
+.about-hero .container,
+.services-hero .container,
+.contact-hero .container,
+.gallery-hero .container {
+  max-width: none;
+  padding: 0 clamp(2rem, 8vw, 9rem);
+}
 
 /* Interior page hero headings — bigger and bolder */
 .about-hero h1 {
