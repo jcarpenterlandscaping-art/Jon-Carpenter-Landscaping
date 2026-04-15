@@ -3,7 +3,7 @@
 ============================================================ */
 :root {
   --brown:      #6B3F1F;        /* secondary brown */
-  --amber:      #2D6A4F;        /* primary green (accent) */
+  --amber:      #E9C46A;        /* gold accent */
   --cream:      #FFFFFF;        /* white */
   --espresso:   #1B4332;        /* dark green (headers/hero) */
   --terra:      #40916C;        /* medium green */
@@ -171,8 +171,7 @@ ul { list-style: none; }
 .logo-img {
   height: 144px;
   width: auto;
-  mix-blend-mode: multiply;
-  filter: brightness(1.05);
+  filter: brightness(0) invert(1);
   transition: height 0.3s ease;
 }
 .logo-tagline {
@@ -1278,8 +1277,7 @@ ul { list-style: none; }
 .footer-logo-img {
   height: 216px;
   width: auto;
-  mix-blend-mode: multiply;
-  filter: brightness(1.05);
+  filter: brightness(0) invert(1);
   display: block;
   margin-bottom: 0.75rem;
 }
