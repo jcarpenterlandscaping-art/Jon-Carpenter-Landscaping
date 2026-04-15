@@ -150,6 +150,9 @@ ul { list-style: none; }
 #site-header.scrolled {
   box-shadow: 0 4px 20px rgba(44,26,14,0.35);
 }
+#site-header.scrolled .logo-img {
+  height: 48px;
+}
 
 .header-inner {
   display: flex;
@@ -166,10 +169,11 @@ ul { list-style: none; }
   gap: 0.6rem;
 }
 .logo-img {
-  height: 48px;
+  height: 144px;
   width: auto;
   mix-blend-mode: multiply;
   filter: brightness(1.05);
+  transition: height 0.3s ease;
 }
 .logo-tagline {
   font-size: 0.65rem;
