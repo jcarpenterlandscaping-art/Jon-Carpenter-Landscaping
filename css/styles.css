@@ -1276,7 +1276,7 @@ ul { list-style: none; }
 }
 
 .footer-logo-img {
-  height: 72px;
+  height: 216px;
   width: auto;
   mix-blend-mode: multiply;
   filter: brightness(1.05);
