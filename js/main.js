@@ -156,6 +156,22 @@ function initHeroSlideshow() {
   setInterval(() => goTo(current + 1), DURATION);
 }
 
+/* ---- Work Carousel ---- */
+function initWorkCarousel() {
+  const carousel = document.getElementById('work-carousel');
+  const prev = document.getElementById('work-prev');
+  const next = document.getElementById('work-next');
+  if (!carousel || !prev || !next) return;
+
+  function slideWidth() {
+    const slide = carousel.querySelector('.work-slide');
+    return slide ? slide.offsetWidth + 16 : 0;
+  }
+
+  prev.addEventListener('click', () => carousel.scrollBy({ left: -slideWidth(), behavior: 'smooth' }));
+  next.addEventListener('click', () => carousel.scrollBy({ left:  slideWidth(), behavior: 'smooth' }));
+}
+
 /* ---- Init on load ---- */
 window.addEventListener('DOMContentLoaded', () => {
   // Check URL hash for deep links (e.g. yoursite.com/#svc-pergolas)
@@ -166,6 +182,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initReveal();
   initHeroSlideshow();
+  initWorkCarousel();
 
   // Reveal above-fold hero items immediately
   setTimeout(() => {

@@ -203,7 +203,7 @@
     <!-- RECENT WORK PREVIEW -->
     <section class="recent-work">
       <div class="container">
-        <div class="section-label text-center reveal">Portfolio</div>
+        <div class="section-label text-center reveal">Our Work</div>
         <h2 class="reveal reveal-delay-1">A Few Recent Projects</h2>
         <div class="botanical-divider reveal reveal-delay-2">
           <div class="line"></div>
@@ -214,31 +214,43 @@
           <div class="line"></div>
         </div>
 
-        <div class="work-grid">
-          <div class="work-item reveal" onclick="navigate('svc-patios')" style="cursor:pointer">
-            <div class="work-photo">
-              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio project" loading="lazy" />
+        <div class="work-carousel-wrap reveal">
+          <button class="work-carousel-btn work-carousel-prev" id="work-prev" aria-label="Previous">&#8249;</button>
+          <div class="work-carousel" id="work-carousel">
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
+              <img src="images/gallery/StonePatio.JPEG" alt="Stone patio" loading="lazy" />
+              <div class="work-caption">Stone entertaining patio</div>
             </div>
-            <div class="work-label">Patios</div>
-          </div>
-          <div class="work-item reveal reveal-delay-1" onclick="navigate('svc-landscaping')" style="cursor:pointer">
-            <div class="work-photo">
-              <img src="images/gallery/Landscaping3.JPG" alt="Garden landscaping" loading="lazy" />
-            </div>
-            <div class="work-label">Landscaping</div>
-          </div>
-          <div class="work-item reveal reveal-delay-2" onclick="navigate('svc-stonework')" style="cursor:pointer">
-            <div class="work-photo">
-              <img src="images/gallery/StonePathway1.JPG" alt="Stonework pathway" loading="lazy" />
-            </div>
-            <div class="work-label">Stonework</div>
-          </div>
-          <div class="work-item reveal reveal-delay-3" onclick="navigate('svc-pergolas')" style="cursor:pointer">
-            <div class="work-photo">
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
               <img src="images/gallery/Pergola1.JPG" alt="Pergola build" loading="lazy" />
+              <div class="work-caption">Custom pergola build</div>
             </div>
-            <div class="work-label">Pergolas</div>
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
+              <img src="images/gallery/Landscaping3.JPG" alt="Garden landscaping" loading="lazy" />
+              <div class="work-caption">Garden bed installation</div>
+            </div>
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
+              <img src="images/gallery/StonePathway1.JPG" alt="Stone pathway" loading="lazy" />
+              <div class="work-caption">Denton Calvary — stone pathway</div>
+            </div>
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
+              <img src="images/gallery/Stonewall.JPEG" alt="Stone retaining wall" loading="lazy" />
+              <div class="work-caption">Stone retaining wall</div>
+            </div>
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
+              <img src="images/gallery/Pergola2.JPEG" alt="Pergola over patio" loading="lazy" />
+              <div class="work-caption">Freestanding pergola over patio</div>
+            </div>
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
+              <img src="images/gallery/Landscaping.JPG" alt="Front yard landscaping" loading="lazy" />
+              <div class="work-caption">Front yard redesign</div>
+            </div>
+            <div class="work-slide" onclick="navigate('gallery')" style="cursor:pointer">
+              <img src="images/gallery/StonePatio2.JPEG" alt="Stone patio detail" loading="lazy" />
+              <div class="work-caption">Flagstone patio with custom edging</div>
+            </div>
           </div>
+          <button class="work-carousel-btn work-carousel-next" id="work-next" aria-label="Next">&#8250;</button>
         </div>
 
         <div class="text-center" style="margin-top:2.5rem;">
