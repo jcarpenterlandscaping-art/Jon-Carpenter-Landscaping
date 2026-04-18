@@ -406,7 +406,7 @@ ul { list-style: none; }
 /* ---- Slide dots ---- */
 .hero-dots {
   position: absolute;
-  bottom: 7.2rem;
+  bottom: 9rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
@@ -438,7 +438,7 @@ ul { list-style: none; }
 /* ---- Scroll indicator ---- */
 .hero-scroll {
   position: absolute;
-  bottom: 4.2rem;
+  bottom: 6.5rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
