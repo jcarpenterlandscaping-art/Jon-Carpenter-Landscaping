@@ -406,7 +406,7 @@ ul { list-style: none; }
 /* ---- Slide dots ---- */
 .hero-dots {
   position: absolute;
-  bottom: 5.8rem;
+  bottom: 7.2rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
@@ -438,9 +438,9 @@ ul { list-style: none; }
 /* ---- Scroll indicator ---- */
 .hero-scroll {
   position: absolute;
-  bottom: 5.8rem;
-  left: 2.5rem;
-  transform: none;
+  bottom: 4.2rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 4;
   display: flex;
   flex-direction: column;
@@ -455,8 +455,8 @@ ul { list-style: none; }
 .hero-scroll svg { opacity: 0.45; }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(7px); }
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(7px); }
 }
 
 /* --- INTRO CARD --- */
@@ -620,7 +620,7 @@ ul { list-style: none; }
 
 /* --- TRUST SECTION --- */
 .trust-section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background: var(--espresso);
   position: relative;
   overflow: hidden;
@@ -666,7 +666,7 @@ ul { list-style: none; }
 }
 .trust-badge {
   text-align: center;
-  padding: 2.5rem 2rem;
+  padding: 3rem 2.5rem;
   background: transparent;
   border-radius: 0;
   border: none;
@@ -1341,9 +1341,9 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .teaser-card { flex: 0 0 calc((100% - 1.25rem) / 2); }
   .trust-grid { grid-template-columns: 1fr; }
-  .trust-badge { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 2rem 1.5rem; }
+  .trust-badge { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 2rem; }
   .trust-badge:last-child { border-bottom: none; }
-  .trust-badge .number { font-size: 4rem; }
+  .trust-badge .number { font-size: 4.5rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .intro-card { grid-template-columns: 1fr; gap: 0; }
   .intro-photo-slot { border-radius: 6px 6px 0 0; min-height: 200px; }
