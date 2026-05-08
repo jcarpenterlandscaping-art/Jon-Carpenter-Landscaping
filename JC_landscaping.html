@@ -715,6 +715,42 @@
       margin: 0 auto;
     }
 
+    .services-subnav {
+      background: var(--cream);
+      border-bottom: 1px solid rgba(107,63,31,0.15);
+      position: sticky;
+      top: 64px;
+      z-index: 90;
+    }
+    .services-subnav ul {
+      display: flex;
+      gap: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .services-subnav ul::-webkit-scrollbar { display: none; }
+    .services-subnav a {
+      display: block;
+      padding: 0.75rem 1.1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--brown-light);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .services-subnav a:hover,
+    .services-subnav a.active {
+      color: var(--amber);
+      border-bottom-color: var(--amber);
+    }
+
     .services-content { padding: 5rem 0; background: var(--cream); }
 
     /* Featured landscaping card */
@@ -1477,11 +1513,25 @@
       </div>
     </section>
 
+    <!-- SERVICES SUB-NAV -->
+    <nav class="services-subnav" aria-label="Jump to service">
+      <div class="container">
+        <ul>
+          <li><a href="#svc-landscaping">Landscaping</a></li>
+          <li><a href="#svc-hardscaping">Hardscaping</a></li>
+          <li><a href="#svc-stonework">Stonework</a></li>
+          <li><a href="#svc-pergolas">Pergolas</a></li>
+          <li><a href="#svc-fencing">Fencing</a></li>
+          <li><a href="#svc-mowing">Lawn Mowing</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <section class="services-content">
       <div class="container">
 
         <!-- FEATURED: Landscaping -->
-        <div class="service-featured reveal">
+        <div id="svc-landscaping" class="service-featured reveal">
           <div class="service-featured-photo">
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
               <rect x="4" y="4" width="44" height="44" rx="6" stroke="rgba(250,245,238,0.3)" stroke-width="1.5" stroke-dasharray="4 3"/>
@@ -1503,7 +1553,7 @@
         <div class="services-grid">
 
           <!-- Hardscaping -->
-          <div class="service-card reveal">
+          <div id="svc-hardscaping" class="service-card reveal">
             <div class="service-card-photo">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <rect x="4" y="22" width="28" height="6" rx="2" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
@@ -1520,7 +1570,7 @@
           </div>
 
           <!-- Stonework -->
-          <div class="service-card reveal reveal-delay-1">
+          <div id="svc-stonework" class="service-card reveal reveal-delay-1">
             <div class="service-card-photo">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <polygon points="18,4 30,12 26,28 10,28 6,12" stroke="rgba(107,63,31,0.5)" stroke-width="1.2" fill="rgba(107,63,31,0.06)"/>
@@ -1537,7 +1587,7 @@
           </div>
 
           <!-- Pergolas -->
-          <div class="service-card reveal reveal-delay-2">
+          <div id="svc-pergolas" class="service-card reveal reveal-delay-2">
             <div class="service-card-photo">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <line x1="4" y1="12" x2="32" y2="12" stroke="rgba(107,63,31,0.5)" stroke-width="1.5" stroke-linecap="round"/>
@@ -1558,7 +1608,7 @@
           </div>
 
           <!-- Fencing -->
-          <div class="service-card reveal">
+          <div id="svc-fencing" class="service-card reveal">
             <div class="service-card-photo">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <line x1="4" y1="12" x2="32" y2="12" stroke="rgba(107,63,31,0.5)" stroke-width="1.2"/>
@@ -1577,7 +1627,7 @@
           </div>
 
           <!-- Lawn Mowing -->
-          <div class="service-card reveal reveal-delay-1">
+          <div id="svc-mowing" class="service-card reveal reveal-delay-1">
             <div class="service-card-photo">
               <img src="images/IMG_1244.jpeg" alt="Freshly mowed lawn with stripe pattern" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
@@ -1875,6 +1925,32 @@
         });
       }, 100);
     });
+
+    // Services sub-nav: smooth scroll + active highlight
+    document.querySelectorAll('.services-subnav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        const offset = 64 + 44; // main nav + subnav height
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const links = document.querySelectorAll('.services-subnav a');
+      if (!links.length) return;
+      const offset = 64 + 44 + 20;
+      let active = null;
+      links.forEach(link => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        if (target.getBoundingClientRect().top <= offset) active = link;
+      });
+      links.forEach(l => l.classList.remove('active'));
+      if (active) active.classList.add('active');
+    }, { passive: true });
   </script>
 
 </body>
