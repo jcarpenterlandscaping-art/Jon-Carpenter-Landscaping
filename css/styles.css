@@ -1392,7 +1392,7 @@ ul { list-style: none; }
   .trust-badge .number { font-size: 4.5rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .intro-card { grid-template-columns: 1fr; gap: 0; }
-  .intro-photo-slot { border-radius: 6px 6px 0 0; min-height: 200px; }
+  .intro-photos { display: none; }
   .intro-text { padding: 1.75rem; }
   .intro-text h2 { font-size: 1.5rem; }
   .intro-section { padding: 3rem 0 2rem; }
@@ -1753,8 +1753,7 @@ ul { list-style: none; }
   .work-slide { flex: 0 0 80%; }
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-item--wide { grid-column: span 1; }
-  .intro-photos { flex-direction: row; }
-  .intro-photo-slot--secondary { border-top: none; border-left: 1px dashed rgba(107,63,31,0.2); border-radius: 0; }
+
 }
 
 /* ============================================================
