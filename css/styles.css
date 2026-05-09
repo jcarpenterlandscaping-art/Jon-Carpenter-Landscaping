@@ -203,49 +203,52 @@ ul { list-style: none; }
 
 /* Services dropdown */
 .nav-dropdown { position: relative; }
+.nav-dropdown__trigger { display: flex; align-items: center; gap: 0.3rem; }
+.nav-dropdown__trigger svg { transition: transform 0.2s ease; flex-shrink: 0; }
+.nav-dropdown:hover .nav-dropdown__trigger svg { transform: rotate(180deg); }
+
 .nav-dropdown__menu {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 10px);
   left: 50%;
-  transform: translateX(-50%);
-  background: var(--espresso);
-  border: 1px solid rgba(45,106,79,0.35);
-  border-radius: 6px;
+  transform: translateX(-50%) translateY(-6px);
+  background: #0f2d1e;
+  border: 1px solid rgba(233,196,106,0.18);
+  border-radius: 8px;
   list-style: none;
   margin: 0;
-  padding: 0.4rem 0;
-  min-width: 168px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  padding: 0.5rem 0;
+  min-width: 176px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.55);
   z-index: 200;
+  transition: opacity 0.18s ease, transform 0.18s ease;
 }
-.nav-dropdown__menu::before {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top: none;
-  border-bottom-color: rgba(45,106,79,0.35);
+.nav-dropdown__menu li:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 .nav-dropdown__menu li a {
   display: block;
-  padding: 0.55rem 1.2rem;
+  padding: 0.6rem 1.25rem;
   font-family: 'Lato', sans-serif;
   font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: rgba(250,245,238,0.75);
-  transition: color 0.15s, background 0.15s;
+  color: rgba(250,245,238,0.7);
+  transition: color 0.15s, padding-left 0.15s;
 }
 .nav-dropdown__menu li a:hover {
   color: var(--amber);
-  background: rgba(233,196,106,0.08);
+  padding-left: 1.55rem;
 }
 .nav-dropdown:hover .nav-dropdown__menu,
-.nav-dropdown:focus-within .nav-dropdown__menu { display: block; }
+.nav-dropdown:focus-within .nav-dropdown__menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
 
 /* Mobile nav */
 .nav-toggle {
