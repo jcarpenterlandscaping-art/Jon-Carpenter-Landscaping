@@ -1390,7 +1390,6 @@ ul { list-style: none; }
   .trust-badge { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 2rem; }
   .trust-badge:last-child { border-bottom: none; }
   .trust-badge .number { font-size: 4.5rem; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
   .intro-card { grid-template-columns: 1fr; gap: 0; }
   .intro-photos { display: none; }
   .intro-text { padding: 1.75rem; }
@@ -1443,7 +1442,11 @@ ul { list-style: none; }
   #site-header .header-inner { position: relative; }
   .teaser-card { flex: 0 0 100%; }
   .trust-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-logo-img { height: 110px; }
+  #site-footer { padding: 2.5rem 0 1.5rem; }
+  .footer-bottom { justify-content: center; text-align: center; }
   .form-row { grid-template-columns: 1fr; }
   .hero-ctas { flex-direction: column; }
   .hero-ctas .btn { text-align: center; }
