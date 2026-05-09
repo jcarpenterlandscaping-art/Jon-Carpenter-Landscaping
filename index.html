@@ -184,7 +184,7 @@
         <a href="#" onclick="return navigate('home')" data-page="home">Home</a>
         <a href="#about" onclick="return navigate('about')" data-page="about">About Us</a>
         <div class="nav-dropdown">
-          <a href="#services" onclick="return navigate('services')" data-page="services" class="nav-dropdown__trigger">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#services" onclick="if(window.innerWidth<=640){return false;}return navigate('services')" data-page="services" class="nav-dropdown__trigger">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <ul class="nav-dropdown__menu">
             <li><a href="#" onclick="return navigate('svc-landscaping')">Landscaping</a></li>
             <li><a href="#" onclick="return navigate('svc-hardscaping')">Hardscaping</a></li>
