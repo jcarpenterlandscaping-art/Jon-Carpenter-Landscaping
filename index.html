@@ -72,7 +72,18 @@
       <nav class="main-nav" id="main-nav">
         <a href="#" onclick="return navigate('home')" data-page="home">Home</a>
         <a href="#about" onclick="return navigate('about')" data-page="about">About Us</a>
-        <a href="#services" onclick="return navigate('services')" data-page="services">Services</a>
+        <div class="nav-dropdown">
+          <a href="#services" onclick="return navigate('services')" data-page="services" class="nav-dropdown__trigger">Services &#9662;</a>
+          <ul class="nav-dropdown__menu">
+            <li><a href="#" onclick="return navigate('svc-landscaping')">Landscaping</a></li>
+            <li><a href="#" onclick="return navigate('svc-hardscaping')">Hardscaping</a></li>
+            <li><a href="#" onclick="return navigate('svc-stonework')">Stonework</a></li>
+            <li><a href="#" onclick="return navigate('svc-pergolas')">Pergolas</a></li>
+            <li><a href="#" onclick="return navigate('svc-fencing')">Fencing</a></li>
+            <li><a href="#" onclick="return navigate('svc-mowing')">Lawn Mowing</a></li>
+            <li><a href="#" onclick="return navigate('svc-patios')">Patios</a></li>
+          </ul>
+        </div>
         <a href="#gallery" onclick="return navigate('gallery')" data-page="gallery">Gallery</a>
         <a href="#contact" onclick="return navigate('contact')" data-page="contact">Contact</a>
       </nav>
@@ -327,7 +338,7 @@
 
           <div class="teaser-card reveal reveal-delay-1" onclick="navigate('svc-mowing')">
             <div class="teaser-photo">
-              <img src="images/gallery/Landscaping4.JPG" alt="Lawn Mowing" loading="lazy" />
+              <img src="images/IMG_1251.jpeg" alt="Lawn Mowing" loading="lazy" />
             </div>
             <div class="teaser-body">
               <h3>Lawn Mowing</h3>
@@ -611,7 +622,7 @@
           <!-- Lawn Mowing -->
           <div class="service-card reveal reveal-delay-1" onclick="navigate('svc-mowing')" style="cursor:pointer">
             <div class="service-card-photo">
-              <img src="images/gallery/Landscaping4.JPG" alt="Lawn care" loading="lazy" />
+              <img src="images/IMG_1251.jpeg" alt="Freshly mowed lawn" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3>Lawn Mowing</h3>
@@ -978,8 +989,11 @@
        SERVICE — LAWN MOWING
   ============================================================ -->
   <div id="page-svc-mowing" class="page">
-    <section class="svc-hero svc-hero--no-img">
-      <div class="svc-hero-overlay svc-hero-overlay--solid"></div>
+    <section class="svc-hero">
+      <div class="svc-hero-media">
+        <img src="images/IMG_1244.jpeg" alt="Freshly mowed lawn" loading="lazy" />
+      </div>
+      <div class="svc-hero-overlay"></div>
       <div class="container svc-hero-content">
         <div class="section-label reveal">Service</div>
         <h1 class="reveal reveal-delay-1">Lawn Mowing</h1>
@@ -999,15 +1013,7 @@
             </div>
           </div>
           <div class="svc-sidebar reveal reveal-delay-2">
-            <div class="svc-img-placeholder">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <ellipse cx="24" cy="34" rx="18" ry="5" stroke="rgba(74,103,65,0.5)" stroke-width="1.5"/>
-                <path d="M8 34Q7 25 13 19" stroke="rgba(74,103,65,0.4)" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M40 34Q41 25 35 19" stroke="rgba(74,103,65,0.4)" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M15 19Q17 11 24 9Q31 11 33 19" stroke="rgba(74,103,65,0.7)" stroke-width="1.8" stroke-linecap="round" fill="rgba(74,103,65,0.12)"/>
-              </svg>
-              <span>Photo coming soon</span>
-            </div>
+            <img src="images/IMG_1250.jpeg" alt="Mowed backyard with clean edges" class="svc-img" loading="lazy" />
             <div class="svc-callout">
               <p>"An edge is either right or it isn't. We don't leave until it is."</p>
             </div>
