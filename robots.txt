@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jclandscaping.com/sitemap.xml
+Sitemap: https://jcarpenterlandscaping.com/sitemap.xml
