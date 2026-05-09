@@ -3,23 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JC Landscaping — Quality Outdoor Work Since 1989</title>
+  <title>JC Landscaping | Denton County TX Landscaper Since 1989</title>
 
   <!-- SEO -->
-  <meta name="description" content="JC Landscaping has served the area since 1989. Professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn care. Free estimates." />
+  <meta name="description" content="Jon Carpenter's JC Landscaping has served Denton County, TX since 1989. Professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn mowing. Free estimates — (940) 367-4983." />
+  <meta name="author" content="Jon Carpenter" />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://jclandscaping.com/" />
+
+  <!-- Geo targeting -->
+  <meta name="geo.region" content="US-TX" />
+  <meta name="geo.placename" content="Denton County, Texas" />
+  <meta name="geo.position" content="33.2148;-97.1331" />
+  <meta name="ICBM" content="33.2148, -97.1331" />
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="JC Landscaping — Quality Outdoor Work Since 1989" />
-  <meta property="og:description" content="35+ years of professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn care. Free estimates." />
-  <meta property="og:image" content="images/gallery/StonePatio.JPEG" />
+  <meta property="og:title" content="JC Landscaping | Denton County TX Landscaper Since 1989" />
+  <meta property="og:description" content="35+ years of professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn mowing in Denton County, TX. Free estimates — (940) 367-4983." />
+  <meta property="og:image" content="https://jclandscaping.com/images/gallery/StonePatio.JPEG" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
   <meta property="og:url" content="https://jclandscaping.com/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="JC Landscaping" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JC Landscaping | Denton County TX" />
+  <meta name="twitter:description" content="35+ years of professional landscaping in Denton County, TX. Free estimates — (940) 367-4983." />
+  <meta name="twitter:image" content="https://jclandscaping.com/images/gallery/StonePatio.JPEG" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/gallery/TransparentJCLandscapingLOGO.png" />
   <link rel="apple-touch-icon" href="images/gallery/TransparentJCLandscapingLOGO.png" />
+
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image" href="images/gallery/StonePathway4.JPEG" fetchpriority="high" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,30 +47,123 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Structured Data: Local Business -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LandscapingOrLawnService",
-    "name": "JC Landscaping",
-    "description": "Professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn care. Serving the area since 1989.",
-    "foundingDate": "1989",
-    "telephone": "+19403674983",
-    "email": "jcarpenterlandscaping@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Denton",
-      "addressRegion": "TX",
-      "addressCountry": "US"
-    },
-    "areaServed": "Denton County, TX",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "07:00",
-      "closes": "18:00"
-    },
-    "priceRange": "$$"
+    "@graph": [
+      {
+        "@type": "LandscapingOrLawnService",
+        "@id": "https://jclandscaping.com/#business",
+        "name": "JC Landscaping",
+        "alternateName": "Jon Carpenter Landscaping",
+        "description": "Professional landscaping, stone patios, hardscaping, pergolas, fencing, and lawn mowing serving Denton County, TX since 1989.",
+        "foundingDate": "1989",
+        "telephone": "+19403674983",
+        "email": "jcarpenterlandscaping@gmail.com",
+        "url": "https://jclandscaping.com/",
+        "image": "https://jclandscaping.com/images/gallery/StonePatio.JPEG",
+        "logo": "https://jclandscaping.com/images/gallery/TransparentJCLandscapingLOGO.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Denton",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Denton"},
+          {"@type": "City", "name": "Flower Mound"},
+          {"@type": "City", "name": "Lewisville"},
+          {"@type": "City", "name": "Corinth"},
+          {"@type": "City", "name": "Argyle"},
+          {"@type": "City", "name": "Highland Village"},
+          {"@type": "City", "name": "Sanger"},
+          {"@type": "City", "name": "Lake Dallas"},
+          {"@type": "City", "name": "Krum"},
+          {"@type": "City", "name": "Aubrey"}
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Landscaping & Outdoor Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landscaping", "description": "Professional landscape design and planting for residential properties in Denton County, TX."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hardscaping", "description": "Retaining walls, stone borders, and structural hardscaping for Denton County yards."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stonework", "description": "Custom stone pathways, steps, and decorative stonework in Denton County, TX."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pergola Construction", "description": "Custom-built pergola structures for outdoor living spaces in Denton County."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fencing", "description": "Privacy fencing, decorative borders, and property enclosures in Denton County, TX."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lawn Mowing", "description": "Regular residential lawn mowing and edging service throughout Denton County, TX."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Patio Installation", "description": "Natural stone and flagstone patio installation for Denton County homeowners."}}
+          ]
+        },
+        "founder": {"@id": "https://jclandscaping.com/#founder"}
+      },
+      {
+        "@type": "Person",
+        "@id": "https://jclandscaping.com/#founder",
+        "name": "Jon Carpenter",
+        "jobTitle": "Owner & Head Landscaper",
+        "worksFor": {"@id": "https://jclandscaping.com/#business"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jclandscaping.com/#website",
+        "url": "https://jclandscaping.com/",
+        "name": "JC Landscaping — Denton County TX",
+        "publisher": {"@id": "https://jclandscaping.com/#business"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What areas in Denton County does JC Landscaping serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JC Landscaping serves all of Denton County, TX including Denton, Flower Mound, Lewisville, Corinth, Argyle, Highland Village, Sanger, Lake Dallas, Krum, and Aubrey."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does JC Landscaping offer free estimates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every job starts with a free walk of the property. We look at the space, listen to what you want, and give you a clear price before any work begins. Call (940) 367-4983 to get started."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long has JC Landscaping been in business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JC Landscaping, founded by Jon Carpenter, has been serving Denton County since 1989 — over 35 years of professional landscaping, stonework, and outdoor builds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What landscaping services does JC Landscaping offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JC Landscaping offers seven services: landscaping design and planting, hardscaping, stonework, pergola construction, fencing, lawn mowing, and patio installation. All services are available throughout Denton County, TX."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is the owner of JC Landscaping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JC Landscaping is owned and operated by Jon Carpenter, who has been doing professional landscaping work in Denton County, TX since 1989."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -107,7 +218,7 @@
       <!-- Slideshow -->
       <div class="hero-slides" id="hero-slides">
         <div class="hero-slide hero-slide--active">
-          <img src="images/gallery/StonePathway4.JPEG" alt="" />
+          <img src="images/gallery/StonePathway4.JPEG" alt="Stone pathway landscaping — JC Landscaping, Denton County TX" fetchpriority="high" />
         </div>
         <div class="hero-slide">
           <img src="images/gallery/StonePathway1.JPG" alt="" />
@@ -139,7 +250,7 @@
           Landscaping,<br>
           <em>Stonework &amp; Outdoor Builds.</em>
         </h1>
-        <p class="reveal reveal-delay-2">Patios, pergolas, retaining walls, fencing, garden design, and lawn maintenance. Serving the area since 1989.</p>
+        <p class="reveal reveal-delay-2">Patios, pergolas, retaining walls, fencing, garden design, and lawn maintenance. Serving Denton County, TX since 1989.</p>
         <div class="hero-ctas reveal reveal-delay-3">
           <button class="btn btn-primary" onclick="navigate('services')">Explore Our Services</button>
           <button class="btn btn-outline" onclick="navigate('contact')">Get a Free Estimate</button>
@@ -203,7 +314,7 @@
           <div class="intro-text">
             <div class="section-label">The Work We Do</div>
             <h2>Quality outdoor work since 1989.</h2>
-            <p>JC Landscaping builds outdoor spaces that last — patios, pergolas, stone pathways, retaining walls, garden design, and lawn care. We've been at it since 1989 and the standard hasn't changed.</p>
+            <p>JC Landscaping builds outdoor spaces that last — patios, pergolas, stone pathways, retaining walls, garden design, and lawn care. Owner Jon Carpenter has been doing this work in Denton County, TX since 1989, and the standard hasn't changed.</p>
             <p>Every job starts with a walk of the property. We look at what's there, listen to what you want, and put together a plan that makes sense for the space. Then we do the work and leave it right.</p>
             <button class="btn btn-primary" onclick="navigate('contact')" style="margin-top:0.5rem;">Get a Free Estimate</button>
           </div>
@@ -417,7 +528,7 @@
       <div class="container">
         <div class="section-label reveal">Who We Are</div>
         <h1 class="reveal reveal-delay-1">Experienced crew. Honest work. No shortcuts.</h1>
-        <p class="reveal reveal-delay-2">A small, tight crew that shows up on time, works carefully, and leaves the job site clean. In business since 1989.</p>
+        <p class="reveal reveal-delay-2">Jon Carpenter started JC Landscaping in 1989. Small, tight crew — shows up on time, works carefully, and leaves the job site clean. Over 35 years serving Denton County, TX.</p>
       </div>
     </section>
 
@@ -438,7 +549,7 @@
           <!-- Text column -->
           <div class="about-text">
             <div class="section-label reveal">Our Approach</div>
-            <h2 class="reveal reveal-delay-1">Consistent Crew, Consistent Results</h2>
+            <h2 class="reveal reveal-delay-1">Jon Carpenter — Consistent Crew, Consistent Results</h2>
 
             <p class="reveal reveal-delay-2">Before we touch anything, we walk the site — looking at the grade, the light, the drainage, what's already there, and what you actually want out of the space. A plan that works has to start with understanding the space. We don't skip that step.</p>
 
@@ -702,6 +813,7 @@
               <div class="info-text">
                 <strong>Service Area</strong>
                 <span>Denton County, TX</span>
+                <span style="font-size:0.8rem;opacity:0.75;display:block;margin-top:0.2rem;">Denton · Flower Mound · Lewisville · Corinth · Argyle · Highland Village · Sanger · Lake Dallas · Krum · Aubrey</span>
               </div>
             </div>
 
@@ -713,7 +825,7 @@
               </div>
               <div class="info-text">
                 <strong>Phone</strong>
-                <span>(940) 367-4983</span>
+                <span><a href="tel:+19403674983" style="color:inherit;text-decoration:none;">(940) 367-4983</a></span>
               </div>
             </div>
 
@@ -1153,7 +1265,7 @@
         <!-- Brand -->
         <div class="footer-brand">
           <img src="images/gallery/TransparentJCLandscapingLOGO.png" alt="JC Landscaping" class="footer-logo-img" />
-          <p>Professional landscaping, stonework, and outdoor builds. Serving the area since 1989.</p>
+          <p>Professional landscaping, stonework, and outdoor builds. Serving Denton County, TX since 1989.</p>
         </div>
 
         <!-- Quick links -->
@@ -1185,7 +1297,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 JC Landscaping. All rights reserved.</p>
+        <p>&copy; 2026 JC Landscaping — Jon Carpenter. All rights reserved. Serving Denton County, TX.</p>
       </div>
     </div>
   </footer>
