@@ -578,9 +578,10 @@ ul { list-style: none; }
 .services-teaser .botanical-divider { max-width: 400px; margin: 0 auto 3rem; }
 
 .teaser-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
 .teaser-card {
@@ -590,6 +591,8 @@ ul { list-style: none; }
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex: 0 0 calc((100% - 3 * 1.25rem) / 4);
+  min-width: 0;
 }
 .teaser-card:hover {
   transform: translateY(-5px);
@@ -598,7 +601,7 @@ ul { list-style: none; }
 }
 
 .teaser-photo {
-  height: 220px;
+  height: 165px;
   overflow: hidden;
 }
 .teaser-photo img {
@@ -606,10 +609,6 @@ ul { list-style: none; }
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.45s ease;
-}
-.teaser-card:hover .teaser-photo img {
-  transform: scale(1.07);
 }
 
 .teaser-body {
@@ -1386,7 +1385,7 @@ ul { list-style: none; }
    RESPONSIVE
 ============================================================ */
 @media (max-width: 900px) {
-  .teaser-grid { grid-template-columns: repeat(2, 1fr); }
+  .teaser-card { flex: 0 0 calc((100% - 1.25rem) / 2); }
   .trust-grid { grid-template-columns: 1fr; }
   .trust-badge { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 2.5rem 2rem; }
   .trust-badge:last-child { border-bottom: none; }
@@ -1442,7 +1441,7 @@ ul { list-style: none; }
   .nav-toggle { display: block; }
   #site-header { position: relative; }
   #site-header .header-inner { position: relative; }
-  .teaser-grid { grid-template-columns: 1fr; }
+  .teaser-card { flex: 0 0 100%; }
   .trust-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
