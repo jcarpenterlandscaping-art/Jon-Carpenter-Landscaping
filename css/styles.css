@@ -667,7 +667,7 @@ ul { list-style: none; }
 /* --- TRUST SECTION --- */
 .trust-section {
   padding: 6rem 0;
-  background: var(--espresso);
+  background: var(--cream);
   position: relative;
   overflow: hidden;
 }
@@ -680,18 +680,18 @@ ul { list-style: none; }
   font-family: 'Playfair Display', serif;
   font-size: 28rem;
   font-weight: 900;
-  color: rgba(255,255,255,0.025);
+  color: rgba(107,63,31,0.04);
   line-height: 1;
   pointer-events: none;
   user-select: none;
 }
 
-.trust-section .section-label { color: var(--yellow); }
+.trust-section .section-label { color: var(--amber); }
 
 .trust-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: var(--cream);
+  color: var(--brown);
   margin-bottom: 0.3rem;
   font-style: italic;
 }
@@ -700,7 +700,7 @@ ul { list-style: none; }
   margin: 0 auto 3rem;
 }
 .trust-section .botanical-divider .line {
-  background: linear-gradient(to right, transparent, rgba(255,255,255,0.15), transparent);
+  background: linear-gradient(to right, transparent, var(--amber), transparent);
 }
 
 .trust-grid {
@@ -716,7 +716,7 @@ ul { list-style: none; }
   background: transparent;
   border-radius: 0;
   border: none;
-  border-right: 1px solid rgba(255,255,255,0.08);
+  border-right: 1px solid rgba(107,63,31,0.1);
 }
 .trust-badge:last-child { border-right: none; }
 
@@ -724,7 +724,7 @@ ul { list-style: none; }
   font-family: 'Playfair Display', serif;
   font-size: 5.5rem;
   font-weight: 900;
-  color: var(--yellow);
+  color: var(--brown);
   line-height: 1;
   margin-bottom: 0.6rem;
   text-shadow: none;
@@ -732,18 +732,18 @@ ul { list-style: none; }
 }
 .trust-badge h3 {
   font-size: 0.95rem;
-  color: var(--cream);
+  color: var(--espresso);
   margin-bottom: 0.4rem;
   letter-spacing: 0.05em;
 }
 .trust-badge p {
   font-size: 0.82rem;
-  color: rgba(250,245,238,0.5);
+  color: rgba(44,26,14,0.55);
   line-height: 1.6;
 }
 
 @media (max-width: 640px) {
-  .trust-badge { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .trust-badge { border-right: none; border-bottom: 1px solid rgba(107,63,31,0.1); }
   .trust-badge:last-child { border-bottom: none; }
   .trust-badge .number { font-size: 4rem; }
   .trust-section::before { display: none; }
