@@ -32,6 +32,14 @@ window.addEventListener('popstate', function(e) {
 /* ---- Mobile nav toggle ---- */
 document.getElementById('nav-toggle').addEventListener('click', function() {
   document.getElementById('main-nav').classList.toggle('open');
+  document.querySelector('.nav-dropdown').classList.remove('expanded');
+});
+
+/* ---- Mobile services sub-menu toggle ---- */
+document.querySelector('.nav-dropdown__trigger').addEventListener('click', function(e) {
+  if (window.innerWidth > 640) return;
+  e.preventDefault();
+  document.querySelector('.nav-dropdown').classList.toggle('expanded');
 });
 
 /* ---- Sticky header shadow ---- */

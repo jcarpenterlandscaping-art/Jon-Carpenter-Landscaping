@@ -1424,15 +1424,26 @@ ul { list-style: none; }
   .main-nav.open .nav-dropdown__menu {
     display: block;
     position: static;
-    opacity: 1;
-    pointer-events: auto;
     transform: none;
     box-shadow: none;
     border: none;
     border-radius: 0;
-    padding: 0;
     min-width: 0;
     background: rgba(0,0,0,0.15);
+    /* collapsed by default on mobile */
+    opacity: 1;
+    pointer-events: none;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.28s ease, padding 0.28s ease;
+  }
+  .main-nav.open .nav-dropdown.expanded .nav-dropdown__menu {
+    pointer-events: auto;
+    max-height: 400px;
+  }
+  .main-nav.open .nav-dropdown.expanded .nav-dropdown__trigger svg {
+    transform: rotate(180deg);
   }
   .main-nav.open .nav-dropdown__menu::before { display: none; }
   .main-nav.open .nav-dropdown__menu li a {
