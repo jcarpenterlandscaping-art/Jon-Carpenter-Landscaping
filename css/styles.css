@@ -1424,11 +1424,14 @@ ul { list-style: none; }
   .main-nav.open .nav-dropdown__menu {
     display: block;
     position: static;
+    opacity: 1;
+    pointer-events: auto;
     transform: none;
     box-shadow: none;
     border: none;
     border-radius: 0;
     padding: 0;
+    min-width: 0;
     background: rgba(0,0,0,0.15);
   }
   .main-nav.open .nav-dropdown__menu::before { display: none; }
