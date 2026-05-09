@@ -1456,10 +1456,33 @@ ul { list-style: none; }
   .hero-content { padding: 6rem 1.5rem 12rem; }
 }
 
+@media (max-width: 600px) {
+  /* Switch stats bar to 2×2 grid.
+     DOM order: stat(1) sep(2) stat(3) sep(4) stat(5) sep(6) stat(7)
+     Seps hidden → grid sees 4 items, placed col1/col2 alternating. */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    justify-content: unset;
+  }
+  .hero-stat {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  /* Left column (grid positions 1 & 3 = child 1 & 5) get divider */
+  .hero-stat:nth-child(1),
+  .hero-stat:nth-child(5) { border-right: 1px solid rgba(255,255,255,0.07); }
+  /* Bottom row (child 5 & 7) — remove bottom border */
+  .hero-stat:nth-child(5),
+  .hero-stat:nth-child(7) { border-bottom: none; }
+  .hero-stat strong { font-size: 1.35rem; }
+  .hero-stat span { display: block; font-size: 0.56rem; letter-spacing: 0.14em; }
+  .hero-stat-sep { display: none; }
+  .hero-dots { bottom: 8rem; }
+}
+
 @media (max-width: 480px) {
-  .hero-stat span { display: none; }
-  .hero-stat { padding: 0 0.8rem; }
-  .hero-stat strong { font-size: 1.1rem; }
   .hero-badge { flex-wrap: wrap; gap: 0.5rem; }
   .trust-badge .number { font-size: 3rem; }
   .trust-badge { padding: 1.5rem 1rem; }
